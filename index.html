@@ -1,1031 +1,1190 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B&R Events | Luxury Celebrations Bangalore</title>
-    <meta
-      name="description"
-      content="Bangalore's distinguished luxury event planners specializing in grand weddings, naming ceremonies, pre-wedding photography, milestone birthdays, and royal catering."
-    />
-    <meta name="theme-color" content="#f8f7fd" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              surface: '#f8f7fd',
-              'surface-container': '#f0ede7',
-              'surface-container-low': '#f3f2ef',
-              'surface-container-lowest': '#fffdf9',
-              'surface-container-high': '#eae5e0',
-              'surface-container-highest': '#e8e4df',
-              primary: '#4e051a',
-              'primary-container': '#6b1d2f',
-              secondary: '#9a6a30',
-              'secondary-container': '#f4d8a5',
-              tertiary: '#0d4b4e',
-              'tertiary-container': '#dbe9e6',
-              'on-primary': '#fffdf9',
-              'on-surface': '#191c1f',
-              'on-surface-variant': '#544244',
-              'on-secondary': '#fffdf9',
-              'on-tertiary': '#0d3a3b'
-            },
-            fontFamily: {
-              sans: ['Plus Jakarta Sans', 'sans-serif'],
-              serif: ['Playfair Display', 'serif']
-            },
-            boxShadow: {
-              soft: '0 10px 30px rgba(78,5,26,0.08)'
-            }
-          }
-        }
-      };
-    </script>
-    <style>
-      html { scroll-behavior: smooth; }
-      body { overflow-x: hidden; }
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        font-size: 1.25rem;
-      }
-      .gallery-item { transition: all 0.25s ease; }
-      .gallery-item.hidden { display: none !important; }
-      .gallery-pill.active {
-        background-color: #4e051a;
-        color: #fffdf9;
-      }
-      .nav-link { transition: color 0.2s ease; }
-      .nav-link:hover { color: #4e051a; }
-      .modal-backdrop {
-        background: rgba(0,0,0,0.6);
-      }
-      .modal-card {
-        transform: translateY(0) scale(1);
-        transition: transform 0.25s ease;
-      }
-      .modal-card.hidden { transform: translateY(8px) scale(0.97); }
-    </style>
-  </head>
-  <body class="bg-surface text-on-surface antialiased">
-    <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-[#eae3d7] shadow-[0_2px_12px_rgba(78,5,26,0.04)]">
-      <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-20 gap-4">
-          <a href="#" class="flex items-center gap-3 shrink-0">
-            <img
-              alt="B&R Events Logo"
-              class="h-12 w-auto object-contain"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA..."
-            />
-            <div class="flex flex-col">
-              <span class="font-serif text-xl text-primary tracking-tight">B&R Events</span>
-              <span class="text-[10px] uppercase tracking-[0.22em] text-on-surface-variant">Luxury Celebrations</span>
-            </div>
-          </a>
-
-          <nav class="hidden xl:flex items-center gap-8">
-            <a href="#" class="nav-link text-primary font-semibold">Home</a>
-            <a href="#services-section" class="nav-link text-on-surface-variant hover:text-primary">Services</a>
-            <a href="#gallery-section" class="nav-link text-on-surface-variant hover:text-primary">Gallery</a>
-            <a href="#why-us-section" class="nav-link text-on-surface-variant hover:text-primary">Why Us</a>
-            <button
-              type="button"
-              onclick="openCateringModal()"
-              class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary font-semibold"
-            >
-              <span class="material-symbols-outlined text-lg">restaurant_menu</span>
-              Catering Menu
-            </button>
-          </nav>
-
-          <div class="hidden xl:flex items-center gap-4 shrink-0">
-            <a href="tel:+917338133357" class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary">
-              <span class="material-symbols-outlined text-lg">call</span>
-              <span class="font-semibold">+91 7338133357</span>
-            </a>
-            <a
-              href="#booking-form"
-              class="inline-flex items-center justify-center px-5 py-3 bg-primary text-on-primary rounded-lg shadow-lg shadow-primary/20 hover:bg-primary-container transition-all"
-            >
-              Book Consultation
-            </a>
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>B&amp;R Events | Luxury Celebrations Bangalore</title><meta name="description" content="Bangalore's distinguished luxury event planners specializing in grand weddings, naming ceremonies, pre-wedding photography, milestone birthdays, and royal catering."><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } html { scroll-behavior: smooth; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#f8f9fd", "outline-variant": "#dac0c2", "tertiary": "#002b1f", "on-background": "#191c1f", "surface-container-highest": "#e1e2e6", "secondary-fixed-dim": "#e6c364", "on-tertiary-fixed-variant": "#214f40", "on-primary-fixed-variant": "#7c2a3b", "surface-container": "#eceef2", "on-primary-container": "#ee8495", "tertiary-fixed": "#bcedd8", "error-container": "#ffdad6", "outline": "#877274", "secondary-fixed": "#ffe08f", "surface-dim": "#d8dade", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "surface-bright": "#f8f9fd", "surface-container-low": "#f2f3f7", "surface-tint": "#9a4152", "on-primary-fixed": "#400013", "surface-container-high": "#e7e8ec", "primary": "#4e051a", "on-surface": "#191c1f", "tertiary-container": "#124234", "inverse-primary": "#ffb2bc", "on-tertiary": "#ffffff", "primary-container": "#6b1d2f", "on-secondary-fixed": "#241a00", "secondary": "#755b00", "secondary-container": "#fed977", "error": "#ba1a1a", "background": "#f8f9fd", "tertiary-fixed-dim": "#a1d1bd", "on-surface-variant": "#544244", "on-secondary-fixed-variant": "#584400", "on-error": "#ffffff", "surface-variant": "#e1e2e6", "inverse-on-surface": "eff1f5", "on-tertiary-container": "#7fae9b", "on-primary": "#ffffff", "primary-fixed-dim": "#ffb2bc", "on-tertiary-fixed": "#002117", "inverse-surface": "#2e3134", "on-secondary-container": "#785d00", "primary-fixed": "#ffd9dd", "on-error-container": "#93000a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-mobile": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "space-2xl": "4rem", "space-sm": "0.5rem", "space-3xl": "6rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin-tablet": "2rem", "space-xl": "2.5rem", "margin": "4rem", "margin-mobile": "1.25rem" }, "fontFamily": { "headline-md": [ "Playfair Display" ], "headline-lg-mobile": [ "Playfair Display" ], "label-sm": [ "Plus Jakarta Sans" ], "headline-sm": [ "Playfair Display" ], "body-md": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "display-mobile": [ "Playfair Display" ], "display": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Playfair Display" ], "label-md": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-md": [ "28px", { "lineHeight": "36px", "fontWeight": "500" } ], "headline-lg-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "600" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "fontWeight": "500" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "display-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "title-lg": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased" style="background-color: rgb(250, 247, 242);"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(107,29,47,0.06)]" style="background-color: rgba(250, 247, 242, 0.92); border-bottom: 1px solid rgb(234, 227, 215); box-shadow: rgba(78, 5, 26, 0.04) 0px 2px 12px;"><div class="h-20 max-w-[1320px] mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><a href="#" class="flex items-center gap-space-md text-decoration-none"><img alt="B&amp;R Events Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VLGYW2EW3wrv1KqDyR5YsB8ampetsGkGN-WWwIy4sVktZAQZrZwOO-EpAg1N5tB8Ja8QMgMmDkVb2bxtN_bemB89DD_29JrkG7GxgT_sbS0BVRFqH4hpbnsG2h5NlijwU_5_ZWSlDS-mh6GeQDrDBfWJElfWg_X0EHdzvuOGCkXygE4cZhsQIOuGSkTw8ZKL3aEA5sryYl9IPF6AQcDA1JjyUWD9_wS7BWcLp8SwT2o4NSDk0pv6pxC1M"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">B&amp;R Events</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary mt-space-xs">Luxury Celebrations Bangalore</span></div></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-title-md"><a aria-current="page" class="transition-colors text-primary font-title-md" data-path="home" href="#">Home</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors" data-path="services" href="#services-section">Services</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors" data-path="gallery" href="#gallery-section">Gallery</a><button class="inline-flex items-center gap-1 font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-path="catering-menu" id="catering-menu-btn" onclick="openCateringModal()" type="button"><span class="">Catering Menu</span><span class="material-symbols-outlined text-[18px] text-secondary">restaurant_menu</span></button><a class="font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors" data-path="why-us" href="#why-us-section">Why Us</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden md:flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors" href="tel:+917338133357"><span class="material-symbols-outlined text-secondary">call</span><span class="font-title-md text-title-md text-on-surface font-semibold">+91 7338133357</span></a><a class="inline-flex items-center justify-center px-space-md py-space-sm bg-primary-container text-on-primary font-title-md text-title-md rounded-lg shadow-[0_4px_16px_rgba(201,168,76,0.2)] hover:bg-primary transition-all duration-200" data-path="contact-and-booking" href="#booking-form">Book Consultation</a><button aria-label="Toggle navigation menu" class="xl:hidden w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors focus:outline-none cursor-pointer" id="mobile-menu-btn" onclick="toggleMobileMenu()" type="button"><span class="material-symbols-outlined text-2xl" id="mobile-menu-icon">menu</span></button></div></div><div class="hidden xl:hidden bg-surface/98 backdrop-blur-md border-t border-outline-variant/30 px-gutter py-4 shadow-xl flex flex-col gap-3" id="mobile-nav-drawer"><a class="font-title-md text-primary font-semibold py-1.5 border-b border-surface-container" href="#" onclick="toggleMobileMenu()">Home</a><a class="font-title-md text-on-surface-variant hover:text-primary py-1.5 border-b border-surface-container" href="#services-section" onclick="toggleMobileMenu()">Services</a><a class="font-title-md text-on-surface-variant hover:text-primary py-1.5 border-b border-surface-container" href="#gallery-section" onclick="toggleMobileMenu()">Gallery</a><button class="text-left font-title-md text-on-surface-variant hover:text-primary py-1.5 border-b border-surface-container flex items-center justify-between cursor-pointer w-full" onclick="toggleMobileMenu(); openCateringModal();" type="button"><span>Catering Menu</span><span class="material-symbols-outlined text-[18px] text-secondary">restaurant_menu</span></button><a class="font-title-md text-on-surface-variant hover:text-primary py-1.5 border-b border-surface-container" href="#why-us-section" onclick="toggleMobileMenu()">Why Us</a><a class="flex items-center gap-2 pt-2 text-secondary font-title-md font-semibold" href="tel:+917338133357"><span class="material-symbols-outlined text-[20px]">call</span><span>+91 7338133357</span></a></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]" style="background-color: rgb(250, 247, 242);"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full -mt-20 pt-28 pb-space-3xl overflow-hidden bg-gradient-to-b from-surface via-surface-container-low to-surface" style="background: linear-gradient(rgb(250, 247, 242) 0%, rgb(245, 239, 230) 50%, rgb(250, 247, 242) 100%);">
+<!-- Ambient Backdrop Gradients -->
+<div class="absolute top-0 right-1/4 w-96 h-96 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/3 left-10 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-[1320px] mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Copy & Value Proposition -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 bg-surface-container rounded-full text-secondary font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+            Bengaluru’s Foremost Luxury Event Architect
           </div>
-
-          <button
-            id="mobile-menu-btn"
-            type="button"
-            aria-label="Toggle navigation menu"
-            class="xl:hidden flex items-center justify-center w-11 h-11 rounded-lg bg-surface-container text-primary"
-            onclick="toggleMobileMenu()"
-          >
-            <span id="mobile-menu-icon" class="material-symbols-outlined text-2xl">menu</span>
-          </button>
-        </div>
-
-        <div id="mobile-nav-drawer" class="hidden xl:hidden border-t border-surface-container-high bg-surface/95 pb-4">
-          <div class="flex flex-col gap-2 pt-3">
-            <a href="#" class="px-3 py-2 rounded-md text-primary font-semibold hover:bg-surface-container" onclick="toggleMobileMenu()">Home</a>
-            <a href="#services-section" class="px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container" onclick="toggleMobileMenu()">Services</a>
-            <a href="#gallery-section" class="px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container" onclick="toggleMobileMenu()">Gallery</a>
-            <a href="#why-us-section" class="px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container" onclick="toggleMobileMenu()">Why Us</a>
-            <button type="button" onclick="openCateringModal(); toggleMobileMenu();" class="px-3 py-2 rounded-md text-left text-on-surface-variant hover:bg-surface-container">
-              Catering Menu
-            </button>
-            <a href="#booking-form" class="mt-2 inline-flex items-center justify-center px-4 py-3 bg-primary text-on-primary rounded-lg" onclick="toggleMobileMenu()">
-              Book Consultation
-            </a>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight leading-tight">
+            Crafting Unforgettable Moments &amp; Royal Celebrations
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            Bangalore's distinguished event planners specializing in luxury weddings, traditional naming ceremonies, milestone birthdays, corporate galas, and bespoke royal catering.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm bg-primary-container text-on-primary font-title-md text-title-md rounded-lg shadow-lg shadow-primary/20 hover:bg-primary transition-all duration-300" href="#booking-form">
+<span class="">Plan Your Celebration</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm bg-surface-container text-primary font-title-md text-title-md rounded-lg hover:bg-surface-container-highest transition-all duration-300" href="#services-section">
+<span class="">Explore Our Services</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</a>
+</div>
+<!-- Trust Badges Bar -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-lg">
+<div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">500+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-0.5">Events Hosted</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-0.5">In-House Decor</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Master</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-0.5">Chef Catering</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold">4.9★</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-0.5">Google Rating</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Visual Stage Spotlight Overlay Card -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl bg-surface-container-high aspect-[16/10] group">
+<img alt="Grand Royal Mandap Wedding Stage in Bangalore" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhQA-TiKn68Oea9H5CG_mLWwBisLN6eweQJEgwzdHMrqtavBSUkTeox9Ktzq0vGus9MQervN_scRyJZjkip2IKgsbSzZpXgI4TFtSs0zYNi13jdSQ1Q_G1SL2K85uy-PcnfRSeKvtfWzkz2ghJCvC3fCtDTUUWhGvmcvv4XrmokaI6Dax2izYrhNpkqQdQdTiRoFLyT0KvEFzIQla4ueLhJ0u-35bnvDUnv5_an23chDURrQOqCOj2Zw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20"></div>
+<!-- Floating Gilded Badge -->
+<div class="absolute top-space-md left-space-md px-space-md py-space-xs bg-surface-container-lowest/90 backdrop-blur-md rounded-full shadow-md flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Palace Grounds Wedding Feature</span>
+</div>
+<!-- Bottom Information Scrim -->
+<div class="absolute bottom-0 inset-x-0 p-space-lg flex items-end justify-between text-on-primary">
+<div>
+<p class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-widest">Heritage Set Decor</p>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">The Regal Carved Mandap</h3>
+<p class="font-body-sm text-body-sm text-on-primary/90 mt-0.5">15,000+ Fresh Exotic Florals &amp; Traditional Warm Brass Candle Chandeliers</p>
+</div>
+<div class="hidden sm:flex flex-col items-end shrink-0 pl-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider opacity-80">Full Package</span>
+<span class="font-title-lg text-title-lg text-secondary-fixed font-semibold">Turnkey Production</span>
+</div>
+</div>
+</div>
+<!-- Decorative Floating Card -->
+<div class="hidden sm:flex absolute -bottom-6 -left-6 bg-surface-container-lowest p-space-md rounded-xl shadow-xl items-center gap-space-md max-w-xs">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed">auto_awesome</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-semibold">Bengaluru Specialists</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Marathahalli, Whitefield, Palace Grounds &amp; Beyond</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SIGNATURE SERVICES (6 Core Pillars) -->
+<section class="w-full py-space-3xl bg-surface" id="services-section" style="background-color: rgb(250, 247, 242); border-top: 1px solid rgb(234, 227, 215);">
+<div class="max-w-[1320px] mx-auto px-gutter">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div class="max-w-2xl">
+<div class="flex items-center gap-space-xs text-secondary font-label-md text-label-md uppercase tracking-widest mb-space-xs">
+<span class="w-6 h-0.5 bg-secondary"></span>
+            Curated Event Verticals
           </div>
-        </div>
-      </div>
-    </header>
-
-    <main class="w-full pt-20 bg-surface">
-      <section class="relative w-full overflow-hidden bg-gradient-to-b from-surface via-surface-container-low to-surface">
-        <div class="absolute top-0 right-[25%] w-96 h-96 bg-secondary/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
-        <div class="absolute top-1/3 left-10 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
-
-        <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-            <div class="lg:col-span-6 flex flex-col gap-6">
-              <div class="inline-flex items-center gap-2 self-start px-4 py-2 bg-surface-container rounded-full text-secondary font-semibold uppercase tracking-[0.18em] text-[11px]">
-                <span class="material-symbols-outlined text-[16px]">verified</span>
-                Bengaluru’s Foremost Luxury Event Architect
-              </div>
-
-              <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight text-primary tracking-tight">
-                Crafting Unforgettable Moments & Royal Celebrations
-              </h1>
-
-              <p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
-                Bangalore's distinguished event planners specializing in luxury weddings, traditional naming ceremonies, milestone birthdays, corporate galas, and bespoke royal catering.
+<h2 class="font-headline-lg text-headline-lg text-primary">Our Signature Services</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+            From intimate Vedic rituals to expansive ballroom celebrations, our in-house master craftsmen and production crew deliver flawless execution.
+          </p>
+</div>
+<a class="inline-flex items-center gap-space-xs text-primary font-title-md text-title-md hover:text-primary-container group shrink-0" href="#booking-form">
+<span class="">Book Tailored Consultation</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- 6 Core Services Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- 1. Weddings & Grand Receptions -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img alt="Weddings &amp; Receptions Stage Styling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhQA-TiKn68Oea9H5CG_mLWwBisLN6eweQJEgwzdHMrqtavBSUkTeox9Ktzq0vGus9MQervN_scRyJZjkip2IKgsbSzZpXgI4TFtSs0zYNi13jdSQ1Q_G1SL2K85uy-PcnfRSeKvtfWzkz2ghJCvC3fCtDTUUWhGvmcvv4XrmokaI6Dax2izYrhNpkqQdQdTiRoFLyT0KvEFzIQla4ueLhJ0u-35bnvDUnv5_an23chDURrQOqCOj2Zw">
+<span class="absolute top-space-md left-space-md px-space-sm py-0.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase rounded-full">Grand Weddings</span>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Weddings &amp; Grand Receptions</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+                Opulent Mandap architecture, thematic floral arches, illuminated sangeet stages, curated bridal grand entries, and seamless day-of bridal concierge.
               </p>
-
-              <div class="flex flex-wrap items-center gap-4 pt-2">
-                <a href="#booking-form" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-on-primary rounded-lg shadow-lg shadow-primary/20 hover:bg-primary-container transition-all">
-                  <span>Plan Your Celebration</span>
-                  <span class="material-symbols-outlined text-[18px]">arrow_downward</span>
-                </a>
-                <a href="#services-section" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-surface-container text-primary rounded-lg hover:bg-surface-container-highest transition-all">
-                  <span>Explore Our Services</span>
-                  <span class="material-symbols-outlined text-[18px]">east</span>
-                </a>
-              </div>
-
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6">
-                <div class="p-4 bg-surface-container-lowest rounded-xl shadow-sm">
-                  <div class="font-serif text-3xl text-primary font-semibold">500+</div>
-                  <div class="text-[11px] uppercase tracking-[0.12em] text-on-surface-variant mt-1">Events Hosted</div>
-                </div>
-                <div class="p-4 bg-surface-container-lowest rounded-xl shadow-sm">
-                  <div class="font-serif text-3xl text-secondary font-semibold">100%</div>
-                  <div class="text-[11px] uppercase tracking-[0.12em] text-on-surface-variant mt-1">In-House Decor</div>
-                </div>
-                <div class="p-4 bg-surface-container-lowest rounded-xl shadow-sm">
-                  <div class="font-serif text-3xl text-primary font-semibold">Master</div>
-                  <div class="text-[11px] uppercase tracking-[0.12em] text-on-surface-variant mt-1">Chef Catering</div>
-                </div>
-                <div class="p-4 bg-surface-container-lowest rounded-xl shadow-sm">
-                  <div class="font-serif text-3xl text-secondary font-semibold">4.9★</div>
-                  <div class="text-[11px] uppercase tracking-[0.12em] text-on-surface-variant mt-1">Google Rating</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="lg:col-span-6 relative">
-              <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-surface-container-high aspect-[16/10] group">
-                <img
-                  alt="Grand Royal Mandap Wedding Stage in Bangalore"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80"
-                />
-                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20"></div>
-
-                <div class="absolute top-4 left-4 px-4 py-2 bg-surface-container-lowest/90 backdrop-blur-md rounded-full shadow-md flex items-center gap-2">
-                  <span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
-                  <span class="text-[11px] uppercase tracking-[0.15em] text-primary font-bold">Palace Grounds Wedding Feature</span>
-                </div>
-
-                <div class="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between text-on-primary">
-                  <div>
-                    <p class="text-[11px] uppercase tracking-[0.2em] text-secondary-fixed">Heritage Set Decor</p>
-                    <h3 class="text-2xl font-serif mt-2">The Regal Carved Mandap</h3>
-                    <p class="text-sm text-on-primary/90 mt-1">15,000+ Fresh Exotic Florals & Traditional Warm Brass Candle Chandeliers</p>
-                  </div>
-                  <div class="hidden sm:flex flex-col items-end shrink-0 pl-4">
-                    <span class="text-[11px] uppercase tracking-[0.2em] opacity-80">Full Package</span>
-                    <span class="text-2xl font-semibold text-secondary-fixed">Turnkey Production</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="hidden sm:flex absolute -bottom-6 -left-6 bg-surface-container-lowest p-4 rounded-xl shadow-xl items-center gap-4 max-w-xs">
-                <div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined">auto_awesome</span>
-                </div>
-                <div class="flex flex-col">
-                  <span class="text-lg font-semibold text-primary">Bengaluru Specialists</span>
-                  <span class="text-sm text-on-surface-variant">Marathahalli, Whitefield, Palace Grounds & Beyond</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services-section" class="w-full py-20 bg-surface border-t border-[#eae3d7]">
-        <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-14">
-            <div class="max-w-2xl">
-              <div class="flex items-center gap-2 text-secondary uppercase tracking-[0.18em] text-[12px] font-semibold mb-3">
-                <span class="w-6 h-0.5 bg-secondary"></span>
-                Curated Event Verticals
-              </div>
-              <h2 class="font-serif text-4xl text-primary">Our Signature Services</h2>
-              <p class="text-lg text-on-surface-variant mt-3">
-                From intimate Vedic rituals to expansive ballroom celebrations, our in-house master craftsmen and production crew deliver flawless execution.
+</div>
+<ul class="flex flex-col gap-space-xs text-on-surface font-body-sm text-body-sm pt-space-xs">
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Traditional Muhurtham &amp; Reception Staging</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> 100% Fresh Bangalore Flower Market Floristry</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Intelligent Lighting &amp; Acoustic Ambiance</li>
+</ul>
+</div>
+</div>
+<!-- 2. Marriage & Pre-Wedding Photography -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img alt="Marriage and Pre-Wedding Photography in Bangalore" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClQezqyzQBMIuFUIGqpCo_Z3eRh5pAsvQ9_pO5BSgKqoVDuRYCrrsWjMsPxaLgOEnEIE0CeSSmWuwjDxNy0r2IHkksfTGHOO0J9O8Q7lzikrh27h9lBktA33XS_kMCFxb_a2i92qD7tHrepuUWD5Ye0W7kcBx-W2GF0p7jDQ5QpXVpL4upEHcZ4BBM3UIdOW8XrJYUEFTx7SsEbJ74SwoChFZIJSeGm19CV03VBMEWEsrT3lszlYtHhA">
+<span class="absolute top-space-md left-space-md px-space-sm py-0.5 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase rounded-full">Photography &amp; Film</span>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Marriage &amp; Pre-Wedding Photography</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+                Capturing raw emotion and royal aesthetics. Pre-wedding destination shoots at historic landmarks, drone cinematography, candid storytelling, and heirloom photo books.
               </p>
-            </div>
-            <a href="#booking-form" class="inline-flex items-center gap-2 text-primary hover:text-primary-container group shrink-0">
-              <span class="font-semibold">Book Tailored Consultation</span>
-              <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-            </a>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div class="relative h-60 overflow-hidden bg-surface-container">
-                <img alt="Weddings & Receptions Stage Styling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=80" />
-                <span class="absolute top-4 left-4 px-3 py-1 bg-primary text-on-primary rounded-full text-[11px] uppercase tracking-[0.1em]">Grand Weddings</span>
-              </div>
-              <div class="p-6 flex flex-col flex-grow justify-between">
-                <div>
-                  <h3 class="font-serif text-2xl text-primary mb-3">Weddings & Grand Receptions</h3>
-                  <p class="text-base text-on-surface-variant mb-4 leading-relaxed">Opulent Mandap architecture, thematic floral arches, illuminated sangeet stages, curated bridal grand entries, and seamless day-of bridal concierge.</p>
-                </div>
-                <ul class="space-y-3 text-sm text-on-surface">
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Traditional Muhurtham & Reception Staging</li>
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> 100% Fresh Bangalore Flower Market Floristry</li>
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Intelligent Lighting & Acoustic Ambiance</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div class="relative h-60 overflow-hidden bg-surface-container">
-                <img alt="Marriage and Pre-Wedding Photography in Bangalore" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=80" />
-                <span class="absolute top-4 left-4 px-3 py-1 bg-secondary text-on-secondary rounded-full text-[11px] uppercase tracking-[0.1em]">Photography & Film</span>
-              </div>
-              <div class="p-6 flex flex-col flex-grow justify-between">
-                <div>
-                  <h3 class="font-serif text-2xl text-primary mb-3">Marriage & Pre-Wedding Photography</h3>
-                  <p class="text-base text-on-surface-variant mb-4 leading-relaxed">Capturing raw emotion and royal aesthetics. Pre-wedding destination shoots at historic landmarks, drone cinematography, candid storytelling, and heirloom photo books.</p>
-                </div>
-                <ul class="space-y-3 text-sm text-on-surface">
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Bangalore Palace & Heritage Location Permits</li>
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> 4K Cinematic Teasers & Same-Day Reels</li>
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Dedicated Traditional Ritual Photographers</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div class="relative h-60 overflow-hidden bg-surface-container">
-                <img alt="Traditional Naming Ceremony Namakarana Setup with Cradle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80" />
-                <span class="absolute top-4 left-4 px-3 py-1 bg-tertiary-container text-on-tertiary rounded-full text-[11px] uppercase tracking-[0.1em]">Auspicious Rituals</span>
-              </div>
-              <div class="p-6 flex flex-col flex-grow justify-between">
-                <div>
-                  <h3 class="font-serif text-2xl text-primary mb-3">Naming Ceremonies (Namakarana)</h3>
-                  <p class="text-base text-on-surface-variant mb-4 leading-relaxed">Honoring ancestral traditions with beautifully adorned antique wooden cradles, marigold & jasmine drapes, traditional brass deepams, and Vedic priest assistance.</p>
-                </div>
-                <ul class="space-y-3 text-sm text-on-surface">
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Carved Rosewood & Teak Swings / Thottil</li>
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Authentic South Indian Pooja Samagri & Decor</li>
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Customized Return Gift & Sweet Boxes</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div class="relative h-60 overflow-hidden bg-surface-container">
-                <img alt="Royal Indian Banquet Catering Buffet and Live Counters" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" />
-                <span class="absolute top-4 left-4 px-3 py-1 bg-secondary text-on-secondary rounded-full text-[11px] uppercase tracking-[0.1em]">Gourmet Feast</span>
-              </div>
-              <div class="p-6 flex flex-col flex-grow justify-between">
-                <div>
-                  <h3 class="font-serif text-2xl text-primary mb-3">Food & Royal Catering</h3>
-                  <p class="text-base text-on-surface-variant mb-4 leading-relaxed">Culinary masterworks celebrating royal flavors. Traditional plantain leaf banquets, Awadhi royal buffets, live interactive tandoor & chaat stations, and artisanal confectioneries.</p>
-                </div>
-                <ul class="space-y-3 text-sm text-on-surface">
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> 100% Pure Brahmin & Jain Options Available</li>
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Uniformed White-Glove Hospitality Staff</li>
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Tasting Sessions Prior to Event Finalization</li>
-                </ul>
-                <div class="pt-4">
-                  <button type="button" onclick="openCateringModal()" class="inline-flex items-center gap-2 text-primary font-semibold hover:text-secondary transition-colors">
-                    <span>Explore Catering Menu</span>
-                    <span class="material-symbols-outlined">restaurant_menu</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div class="relative h-60 overflow-hidden bg-surface-container">
-                <img alt="Luxury Milestone Birthday & Anniversary Celebration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1464306076886-da185f6a9d8d?auto=format&fit=crop&w=1200&q=80" />
-              </div>
-              <div class="p-6 flex flex-col flex-grow justify-between">
-                <div>
-                  <h3 class="font-serif text-2xl text-primary mb-3">Birthday Parties & Anniversaries</h3>
-                  <p class="text-base text-on-surface-variant mb-4 leading-relaxed">Magical theme parties for young dreamers and regal silver/golden anniversary galas for elders. Complete with customized balloon architecture, live performers, and bespoke cakes.</p>
-                </div>
-                <ul class="space-y-3 text-sm text-on-surface">
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Thematic 3D Stage Backdrops & Photobooths</li>
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> MCs, Magicians, Tattoo Artists & Game Hosts</li>
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Sound, Intelligent DJ & Ambient Uplighting</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-              <div class="relative h-60 overflow-hidden bg-surface-container">
-                <img alt="Prestige Corporate Events & Tech Summits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" />
-              </div>
-              <div class="p-6 flex flex-col flex-grow justify-between">
-                <div>
-                  <h3 class="font-serif text-2xl text-primary mb-3">Corporate Events & Annual Galas</h3>
-                  <p class="text-base text-on-surface-variant mb-4 leading-relaxed">From Marathahalli IT corridors to luxury star hotel ballrooms. We execute tech product launches, annual company awards, festive Diwali galas, and executive retreats.</p>
-                </div>
-                <ul class="space-y-3 text-sm text-on-surface">
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> High-Definition Seamless LED Video Walls</li>
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Corporate Branding, Stalls & Delegate Kits</li>
-                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Multi-Cuisine Executive Buffets & Mocktail Bars</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="gallery-section" class="w-full py-20 bg-surface-container-low border-y border-[#eae3d7]">
-        <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center max-w-2xl mx-auto mb-10">
-            <span class="text-secondary uppercase tracking-[0.2em] text-[12px] block mb-2 font-semibold">Visual Splendor</span>
-            <h2 class="font-serif text-4xl text-primary">Moments We Have Brought to Life</h2>
-            <p class="text-lg text-on-surface-variant mt-3">A glimpse into the celebrations orchestrated with passion across Bangalore's most celebrated venues.</p>
-          </div>
-
-          <div class="flex flex-wrap items-center justify-center gap-2 mb-10" id="gallery-filters">
-            <button type="button" class="gallery-pill active px-4 py-2 rounded-full text-sm font-semibold bg-primary text-on-primary transition-all duration-200" data-filter="all">All Celebrations</button>
-            <button type="button" class="gallery-pill px-4 py-2 rounded-full text-sm font-semibold bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all duration-200" data-filter="wedding">Luxury Weddings</button>
-            <button type="button" class="gallery-pill px-4 py-2 rounded-full text-sm font-semibold bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all duration-200" data-filter="photography">Pre-Wedding & Portraits</button>
-            <button type="button" class="gallery-pill px-4 py-2 rounded-full text-sm font-semibold bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all duration-200" data-filter="naming">Naming Ceremonies</button>
-            <button type="button" class="gallery-pill px-4 py-2 rounded-full text-sm font-semibold bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all duration-200" data-filter="catering">Royal Catering</button>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4" id="gallery-container">
-            <div class="gallery-item wedding lg:col-span-8 relative rounded-2xl overflow-hidden group h-[400px] shadow-sm">
-              <img alt="Grand Royal Mandap in Bangalore" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=80" />
-              <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-black/20 to-transparent"></div>
-              <div class="absolute bottom-0 inset-x-0 p-5 text-on-primary flex items-end justify-between">
-                <div>
-                  <span class="px-2 py-1 bg-secondary text-on-secondary rounded-full text-[10px] uppercase tracking-[0.15em]">Weddings</span>
-                  <h3 class="font-serif text-2xl mt-2">Royal Vows at Palace Grounds</h3>
-                  <p class="text-sm text-on-primary/90">Curated for Rohan & Deepika • 1,200 Attendees</p>
-                </div>
-                <span class="material-symbols-outlined text-secondary-fixed text-3xl">photo_camera</span>
-              </div>
-            </div>
-
-            <div class="gallery-item photography lg:col-span-4 relative rounded-2xl overflow-hidden group h-[400px] shadow-sm">
-              <img alt="Pre wedding photoshoot at Bangalore Palace" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=80" />
-              <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-black/20 to-transparent"></div>
-              <div class="absolute bottom-0 inset-x-0 p-5 text-on-primary">
-                <span class="px-2 py-1 bg-primary-container text-on-primary rounded-full text-[10px] uppercase tracking-[0.15em]">Couples</span>
-                <h3 class="font-serif text-2xl mt-2">Bangalore Palace Promenade</h3>
-                <p class="text-sm text-on-primary/90">Twilight Golden Hour Cinema</p>
-              </div>
-            </div>
-
-            <div class="gallery-item naming lg:col-span-5 relative rounded-2xl overflow-hidden group h-[380px] shadow-sm">
-              <img alt="Traditional cradle naming ceremony decor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80" />
-              <div class="absolute inset-0 bg-gradient-to-t from-tertiary/90 via-black/20 to-transparent"></div>
-              <div class="absolute bottom-0 inset-x-0 p-5 text-on-primary">
-                <span class="px-2 py-1 bg-tertiary-fixed text-on-tertiary-fixed rounded-full text-[10px] uppercase tracking-[0.15em]">Namakarana</span>
-                <h3 class="font-serif text-2xl mt-2">Master Aarav's Cradle Ceremony</h3>
-                <p class="text-sm text-on-primary/90">Pure Brass Lamps & Marigold Floral Haven</p>
-              </div>
-            </div>
-
-            <div class="gallery-item catering lg:col-span-7 relative rounded-2xl overflow-hidden group h-[380px] shadow-sm">
-              <img alt="Royal Catering Feast and Live Counters" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" />
-              <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-black/20 to-transparent"></div>
-              <div class="absolute bottom-0 inset-x-0 p-5 text-on-primary">
-                <span class="px-2 py-1 bg-secondary text-on-secondary rounded-full text-[10px] uppercase tracking-[0.15em]">Royal Catering</span>
-                <h3 class="font-serif text-2xl mt-2">The Maharaja Live Counter Spread</h3>
-                <p class="text-sm text-on-primary/90">Over 65 Artisanal Delicacies Served with White-Glove Elegance</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="why-us-section" class="w-full py-20 bg-surface border-b border-[#eae3d7]">
-        <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <div class="lg:col-span-5 flex flex-col gap-4">
-              <div class="flex items-center gap-2 text-secondary uppercase tracking-[0.18em] text-[12px] font-semibold">
-                <span class="w-6 h-0.5 bg-secondary"></span>
-                The B&R Distinction
-              </div>
-              <h2 class="font-serif text-4xl text-primary">Uncompromising Hospitality, Precision Execution</h2>
-              <p class="text-lg text-on-surface-variant leading-relaxed">
-                Unlike aggregators, B&R Events maintains full direct control over production warehouses, florists, audio-visual machinery, and catering kitchens right here in Marathahalli, Bangalore.
+</div>
+<ul class="flex flex-col gap-space-xs text-on-surface font-body-sm text-body-sm pt-space-xs">
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Bangalore Palace &amp; Heritage Location Permits</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> 4K Cinematic Teasers &amp; Same-Day Reels</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Dedicated Traditional Ritual Photographers</li>
+</ul>
+</div>
+</div>
+<!-- 3. Naming Ceremony (Namakarana) -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img alt="Traditional Naming Ceremony Namakarana Setup with Cradle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjvVXJgUtuXSN51uMuAPUV-l3L45le5uh4-F3fCbhFKt4a7CnoEA8GFMCvC8qQt1vCuX3wp8lYaBkI9idDFZ_eOX-yTrySxDpoF34sE5hHfPYYhR2jhUyWTUIJuHxBIKdYjjCuUGq80o2EG7QxPNk-9Tf6FRS0X9susRXO-aOJU3dcFK02CJIkItVQjGe6XVZGeN3SHY68nH6wuUxxWvuX_i-i6xgnXg9sLfu7y29LIwKKvgNDqGt_9A">
+<span class="absolute top-space-md left-space-md px-space-sm py-0.5 bg-tertiary-container text-on-tertiary font-label-sm text-label-sm uppercase rounded-full">Auspicious Rituals</span>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Naming Ceremonies (Namakarana)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+                Honoring ancestral traditions with beautifully adorned antique wooden cradles, marigold &amp; jasmine drapes, traditional brass deepams, and Vedic priest assistance.
               </p>
-              <div class="p-6 bg-surface-container rounded-2xl flex items-center gap-4">
-                <div class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-md">
-                  <span class="material-symbols-outlined text-2xl">workspace_premium</span>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-2xl text-primary">Single Point of Accountability</h4>
-                  <p class="text-sm text-on-surface-variant">Your assigned Senior Event Curator manages every vendor, permit, and cue.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="p-6 bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-10 h-10 rounded-lg bg-secondary/15 text-secondary flex items-center justify-center mb-3">
-                  <span class="material-symbols-outlined">brush</span>
-                </div>
-                <h3 class="text-xl font-semibold text-primary mb-2">Bespoke Conceptualization</h3>
-                <p class="text-sm text-on-surface-variant leading-relaxed">No generic cookie-cutter designs. We draft custom mood boards, 3D venue renders, and thematic floral elevations matching your family aesthetic.</p>
-              </div>
-
-              <div class="p-6 bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-3">
-                  <span class="material-symbols-outlined">receipt_long</span>
-                </div>
-                <h3 class="text-xl font-semibold text-primary mb-2">Transparent Budgeting</h3>
-                <p class="text-sm text-on-surface-variant leading-relaxed">Line-item transparent quotes with zero unexpected on-site surcharges. Every floral tier, catering plate, and AV specification is documented beforehand.</p>
-              </div>
-
-              <div class="p-6 bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-10 h-10 rounded-lg bg-tertiary-container/15 text-tertiary flex items-center justify-center mb-3">
-                  <span class="material-symbols-outlined">soup_kitchen</span>
-                </div>
-                <h3 class="text-xl font-semibold text-primary mb-2">In-House Production & Catering</h3>
-                <p class="text-sm text-on-surface-variant leading-relaxed">Our culinary team features seasoned South & North Indian master chefs. Fresh farm ingredients cooked under spotless hygienic standards.</p>
-              </div>
-
-              <div class="p-6 bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-10 h-10 rounded-lg bg-secondary/15 text-secondary flex items-center justify-center mb-3">
-                  <span class="material-symbols-outlined">support_agent</span>
-                </div>
-                <h3 class="text-xl font-semibold text-primary mb-2">24/7 Concierge Support</h3>
-                <p class="text-sm text-on-surface-variant leading-relaxed">Direct hotline access to your Event Director from the initial blueprint to the departure of the last guest. Stress-free celebrations guaranteed.</p>
-              </div>
-            </div>
+</div>
+<ul class="flex flex-col gap-space-xs text-on-surface font-body-sm text-body-sm pt-space-xs">
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Carved Rosewood &amp; Teak Swings / Thottil</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Authentic South Indian Pooja Samagri &amp; Decor</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Customized Return Gift &amp; Sweet Boxes</li>
+</ul>
+</div>
+</div>
+<!-- 4. Food & Royal Catering -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img alt="Royal Indian Banquet Catering Buffet and Live Counters" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvk0lxAtiE3hKV6p87VDue9aKZAimhXe37NzRf_GUbwQj7SVn2mT0SkuWI0ufmkIO0aFanBp-p7A59I7SE0GZ4GhfUZzAibVSTx9CPIYU4RMKjg34saAm_qx8VmPBO5ptwHlM8tzMqC6kJ73wwR6ovB6kGzh3pNjM7Q3oclqjYDV3iCvdDdFcVXrKwVM-WUPHTooujojC8nO0lkgteEtka7phIDNlDfyJUQf0EmTZ0l3N0Vj0fIPKQXg">
+<span class="absolute top-space-md left-space-md px-space-sm py-0.5 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase rounded-full">Gourmet Feast</span>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Food &amp; Royal Catering</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+                Culinary masterworks celebrating royal flavors. Traditional plantain leaf banquets, Awadhi royal buffets, live interactive tandoor &amp; chaat stations, and artisanal confectioneries.
+              </p>
+</div>
+<ul class="flex flex-col gap-space-xs text-on-surface font-body-sm text-body-sm pt-space-xs">
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> 100% Pure Brahmin &amp; Jain Options Available</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Uniformed White-Glove Hospitality Staff</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Tasting Sessions Prior to Event Finalization</li>
+</ul>
+<div class="pt-space-sm mt-space-xs">
+<button class="inline-flex items-center gap-1.5 text-primary font-title-md text-body-md font-semibold hover:text-secondary transition-colors" onclick="openCateringModal()" type="button"><span class="">Explore Catering Menu</span><span class="material-symbols-outlined text-[18px]">restaurant_menu</span></button>
+</div>
+</div>
+</div>
+<!-- 5. Birthday Parties & Milestones -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative h-60 overflow-hidden bg-surface-container"><img alt="Luxury Milestone Birthday &amp; Anniversary Celebration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHQL1iOveKP7HG6IVzoL8CUVi0-ib2vH-VyPr80tTytjYMLbzK6n4ahv_dP9EY5okoKGWZGFqbx-wpHYe1OZ5VDFN3ZsZBDppHquxbWfMGATm_g9GvYdc9BhCOpv8ieeARYWggsdi3lmW720gYqPLLwRRdupJYo2AI2Y1H5ugC-ML-XezfNVgsao-i_Rzs7kXer4rLYS45WF46zuNZuJWhuc-FXf_7RiSHM1Yekk8scbl1Fp3fEy9ZrA"><span class="absolute top-space-md left-space-md px-space-sm py-0.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase rounded-full">Milestone Celebrations</span></div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Birthday Parties &amp; Anniversaries</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+                Magical theme parties for young dreamers and regal silver/golden anniversary galas for elders. Complete with customized balloon architecture, live performers, and bespoke cakes.
+              </p>
+</div>
+<ul class="flex flex-col gap-space-xs text-on-surface font-body-sm text-body-sm pt-space-xs">
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Thematic 3D Stage Backdrops &amp; Photobooths</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> MCs, Magicians, Tattoo Artists &amp; Game Hosts</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Sound, Intelligent DJ &amp; Ambient Uplighting</li>
+</ul>
+</div>
+</div>
+<!-- 6. Corporate Events & Annual Galas -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative h-60 overflow-hidden bg-surface-container"><img alt="Prestige Corporate Events &amp; Tech Summits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOrM6hkyLy0gHzc99fUZaiYFlydD9qzBrexxixpoKvOaWHirPJXChgJIEm2UXtkuH1sg-gPcMk_N_Xg_gmQszcW62ftzzKBQ3nSh3QzVOETCbadt0EppmV8oDtAZskLWBaOmvMYJ-TZPMy7dyuma_hrz1ZSDbQ4qpNh9qb9riiYJd4EobGFT0Che5X2fo0WWnd4TcCeto1WbzGv01Ji2DRCzHfVnom2icdB8QdK2YcPTRZUzxbLFDVvQ"><span class="absolute top-space-md left-space-md px-space-sm py-0.5 bg-tertiary-container text-on-tertiary font-label-sm text-label-sm uppercase rounded-full">Corporate &amp; Tech</span></div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Corporate Events &amp; Annual Galas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+                From Marathahalli IT corridors to luxury star hotel ballrooms. We execute tech product launches, annual company awards, festive Diwali galas, and executive retreats.
+              </p>
+</div>
+<ul class="flex flex-col gap-space-xs text-on-surface font-body-sm text-body-sm pt-space-xs">
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> High-Definition Seamless LED Video Walls</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Corporate Branding, Stalls &amp; Delegate Kits</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Multi-Cuisine Executive Buffets &amp; Mocktail Bars</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE PORTFOLIO GALLERY SHOWCASE -->
+<section class="w-full py-space-3xl bg-surface-container-low" style="background-color: rgb(244, 239, 230); border-top: 1px solid rgb(234, 227, 215); border-bottom: 1px solid rgb(234, 227, 215);">
+<section class="w-full py-space-3xl bg-surface-container-low" id="gallery-section" style="background-color: rgb(244, 239, 230); border-top: 1px solid rgb(234, 227, 215); border-bottom: 1px solid rgb(234, 227, 215);">
+<div class="max-w-[1320px] mx-auto px-gutter">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-space-xs">Visual Splendor</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Moments We Have Brought to Life</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+          A glimpse into the celebrations orchestrated with passion across Bangalore's most celebrated venues.
+        </p>
+</div>
+<!-- Filter Chips Bar (Interactive via JS) -->
+<div class="flex flex-wrap items-center justify-center gap-space-xs mb-space-xl" id="gallery-filters">
+<button class="gallery-pill active px-space-md py-space-xs rounded-full font-title-md text-title-md bg-primary text-on-primary shadow-sm transition-all duration-200" data-filter="all" type="button">
+          All Celebrations
+        </button>
+<button class="gallery-pill px-space-md py-space-xs rounded-full font-title-md text-title-md bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all duration-200" data-filter="wedding" type="button">
+          Luxury Weddings
+        </button>
+<button class="gallery-pill px-space-md py-space-xs rounded-full font-title-md text-title-md bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all duration-200" data-filter="photography" type="button">
+          Pre-Wedding &amp; Portraits
+        </button>
+<button class="gallery-pill px-space-md py-space-xs rounded-full font-title-md text-title-md bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all duration-200" data-filter="naming" type="button">
+          Naming Ceremonies
+        </button>
+<button class="gallery-pill px-space-md py-space-xs rounded-full font-title-md text-title-md bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all duration-200" data-filter="catering" type="button">
+          Royal Catering
+        </button>
+</div>
+<!-- Visual Showcase Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-md" id="gallery-container">
+<!-- Large Card: Palace Wedding Mandap -->
+<div class="gallery-item wedding lg:col-span-8 relative rounded-2xl overflow-hidden group h-[400px] shadow-sm">
+<img alt="Grand Royal Mandap in Bangalore" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhQA-TiKn68Oea9H5CG_mLWwBisLN6eweQJEgwzdHMrqtavBSUkTeox9Ktzq0vGus9MQervN_scRyJZjkip2IKgsbSzZpXgI4TFtSs0zYNi13jdSQ1Q_G1SL2K85uy-PcnfRSeKvtfWzkz2ghJCvC3fCtDTUUWhGvmcvv4XrmokaI6Dax2izYrhNpkqQdQdTiRoFLyT0KvEFzIQla4ueLhJ0u-35bnvDUnv5_an23chDURrQOqCOj2Zw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 inset-x-0 p-space-lg text-on-primary flex items-end justify-between">
+<div>
+<span class="px-space-sm py-0.5 bg-secondary text-on-secondary rounded-full font-label-sm text-label-sm uppercase">Weddings</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mt-space-xs">Royal Vows at Palace Grounds</h3>
+<p class="font-body-sm text-body-sm text-on-primary/90">Curated for Rohan &amp; Deepika • 1,200 Attendees</p>
+</div>
+<span class="material-symbols-outlined text-secondary-fixed text-3xl">photo_camera</span>
+</div>
+</div>
+<!-- Medium Card: Pre-wedding shoot -->
+<div class="gallery-item photography lg:col-span-4 relative rounded-2xl overflow-hidden group h-[400px] shadow-sm">
+<img alt="Pre wedding photoshoot at Bangalore Palace" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClQezqyzQBMIuFUIGqpCo_Z3eRh5pAsvQ9_pO5BSgKqoVDuRYCrrsWjMsPxaLgOEnEIE0CeSSmWuwjDxNy0r2IHkksfTGHOO0J9O8Q7lzikrh27h9lBktA33XS_kMCFxb_a2i92qD7tHrepuUWD5Ye0W7kcBx-W2GF0p7jDQ5QpXVpL4upEHcZ4BBM3UIdOW8XrJYUEFTx7SsEbJ74SwoChFZIJSeGm19CV03VBMEWEsrT3lszlYtHhA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 inset-x-0 p-space-lg text-on-primary flex items-end justify-between">
+<div>
+<span class="px-space-sm py-0.5 bg-primary-container text-on-primary rounded-full font-label-sm text-label-sm uppercase">Couples</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mt-space-xs">Bangalore Palace Promenade</h3>
+<p class="font-body-sm text-body-sm text-on-primary/90">Twilight Golden Hour Cinema</p>
+</div>
+</div>
+</div>
+<!-- Medium Card: Traditional Cradle Ceremony -->
+<div class="gallery-item naming lg:col-span-5 relative rounded-2xl overflow-hidden group h-[380px] shadow-sm">
+<img alt="Traditional cradle naming ceremony decor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjvVXJgUtuXSN51uMuAPUV-l3L45le5uh4-F3fCbhFKt4a7CnoEA8GFMCvC8qQt1vCuX3wp8lYaBkI9idDFZ_eOX-yTrySxDpoF34sE5hHfPYYhR2jhUyWTUIJuHxBIKdYjjCuUGq80o2EG7QxPNk-9Tf6FRS0X9susRXO-aOJU3dcFK02CJIkItVQjGe6XVZGeN3SHY68nH6wuUxxWvuX_i-i6xgnXg9sLfu7y29LIwKKvgNDqGt_9A">
+<div class="absolute inset-0 bg-gradient-to-t from-tertiary/90 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 inset-x-0 p-space-lg text-on-tertiary flex items-end justify-between">
+<div>
+<span class="px-space-sm py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-semibold rounded-full font-label-sm text-label-sm uppercase">Namakarana</span>
+<h3 class="font-headline-sm text-headline-sm text-on-tertiary mt-space-xs">Master Aarav's Cradle Ceremony</h3>
+<p class="font-body-sm text-body-sm text-on-tertiary/90">Pure Brass Lamps &amp; Marigold Floral Haven</p>
+</div>
+</div>
+</div>
+<!-- Large Card: Royal Indian Cuisine Banquet -->
+<div class="gallery-item catering lg:col-span-7 relative rounded-2xl overflow-hidden group h-[380px] shadow-sm">
+<img alt="Royal Catering Feast and Live Counters" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvk0lxAtiE3hKV6p87VDue9aKZAimhXe37NzRf_GUbwQj7SVn2mT0SkuWI0ufmkIO0aFanBp-p7A59I7SE0GZ4GhfUZzAibVSTx9CPIYU4RMKjg34saAm_qx8VmPBO5ptwHlM8tzMqC6kJ73wwR6ovB6kGzh3pNjM7Q3oclqjYDV3iCvdDdFcVXrKwVM-WUPHTooujojC8nO0lkgteEtka7phIDNlDfyJUQf0EmTZ0l3N0Vj0fIPKQXg">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 inset-x-0 p-space-lg text-on-primary flex items-end justify-between">
+<div>
+<span class="px-space-sm py-0.5 bg-secondary text-on-secondary rounded-full font-label-sm text-label-sm uppercase">Royal Catering</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mt-space-xs">The Maharaja Live Counter Spread</h3>
+<p class="font-body-sm text-body-sm text-on-primary/90">Over 65 Artisanal Delicacies Served with White-Glove Elegance</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY CHOOSE B&R EVENTS (Differentiators & Precision) -->
+<section class="w-full py-space-3xl bg-surface" style="background-color: rgb(250, 247, 242); border-bottom: 1px solid rgb(234, 227, 215);">
+<section class="w-full py-space-3xl bg-surface" id="why-us-section" style="background-color: rgb(250, 247, 242); border-bottom: 1px solid rgb(234, 227, 215);">
+<div class="max-w-[1320px] mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Left: Core Credo -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary font-label-md text-label-md uppercase tracking-widest">
+<span class="w-6 h-0.5 bg-secondary"></span>
+            The B&amp;R Distinction
           </div>
-        </div>
-      </section>
-
-      <section id="testimonials-section" class="w-full py-20 bg-surface-container-low border-b border-[#eae3d7]">
-        <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between mb-10">
-            <div>
-              <span class="text-secondary uppercase tracking-[0.18em] text-[12px] block mb-2 font-semibold">Verified Experiences</span>
-              <h2 class="font-serif text-4xl text-primary">Praise From Bangalore Families</h2>
+<h2 class="font-headline-lg text-headline-lg text-primary">Uncompromising Hospitality, Precision Execution</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Unlike aggregators, B&amp;R Events maintains full direct control over production warehouses, florists, audio-visual machinery, and catering kitchens right here in Marathahalli, Bangalore.
+          </p>
+<div class="p-space-lg bg-surface-container rounded-2xl flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-md">
+<span class="material-symbols-outlined text-2xl">workspace_premium</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-primary">Single Point of Accountability</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your assigned Senior Event Curator manages every vendor, permit, and cue.</p>
+</div>
+</div>
+</div>
+<!-- Right: 4 Core Differentiators -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-lg bg-secondary/15 text-secondary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined">brush</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-space-xs">Bespoke Conceptualization</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              No generic cookie-cutter designs. We draft custom mood boards, 3D venue renders, and thematic floral elevations matching your family aesthetic.
+            </p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-space-xs">Transparent Budgeting</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Line-item transparent quotes with zero unexpected on-site surcharges. Every floral tier, catering plate, and AV specification is documented beforehand.
+            </p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/15 text-tertiary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined">soup_kitchen</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-space-xs">In-House Production &amp; Catering</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Our culinary team features seasoned South &amp; North Indian master chefs. Fresh farm ingredients cooked under spotless hygienic standards.
+            </p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-lg bg-secondary/15 text-secondary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-space-xs">24/7 Concierge Support</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Direct hotline access to your Event Director from the initial blueprint to the departure of the last guest. Stress-free celebrations guaranteed.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CLIENT TESTIMONIALS & TRUST -->
+<section class="w-full py-space-2xl bg-surface-container-low" style="background-color: rgb(244, 239, 230); border-bottom: 1px solid rgb(234, 227, 215);">
+<section class="w-full py-space-2xl bg-surface-container-low" id="testimonials-section" style="background-color: rgb(244, 239, 230); border-bottom: 1px solid rgb(234, 227, 215);">
+<div class="max-w-[1320px] mx-auto px-gutter">
+<div class="flex items-center justify-between mb-space-xl">
+<div>
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-0.5">Verified Experiences</span>
+<h2 class="font-headline-md text-headline-md text-primary">Praise From Bangalore Families</h2>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-lowest rounded-full shadow-sm">
+<span class="text-secondary font-bold font-title-md text-title-md">4.9 / 5.0</span>
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-1">(120+ Google Reviews)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              "B&amp;R Events managed my daughter's wedding reception at Palace Grounds. The carved mandap floral decor looked directly out of a royal fairy tale. Their catering team received compliments from all 900 guests!"
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold">
+              VS
             </div>
-            <div class="hidden sm:flex items-center gap-3 px-4 py-2 bg-surface-container-lowest rounded-full shadow-sm">
-              <span class="text-secondary font-bold text-xl">4.9 / 5.0</span>
-              <div class="flex text-secondary">
-                <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-              </div>
-              <span class="text-sm text-on-surface-variant">(120+ Google Reviews)</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Dr. Venkat Sundaram</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Wedding Reception • Sadashivanagar</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              "For our son's Namakarana in Marathahalli, we wanted authentic traditional aesthetics with zero hassle. B&amp;R brought an exquisite carved wooden cradle and organized the pooja spread effortlessly. Truly memorable."
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">
+              AK
             </div>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between">
-              <div>
-                <div class="flex text-secondary mb-4">
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                </div>
-                <p class="text-base text-on-surface italic leading-relaxed">“B&R Events managed my daughter's wedding reception at Palace Grounds. The carved mandap floral decor looked directly out of a royal fairy tale. Their catering team received compliments from every guest.”</p>
-              </div>
-              <div class="mt-6 pt-4 border-t border-surface-container-high flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">VS</div>
-                <div>
-                  <h4 class="font-semibold text-primary">Dr. Venkat Sundaram</h4>
-                  <p class="text-sm text-on-surface-variant">Wedding Reception • Sadashivanagar</p>
-                </div>
-              </div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Ananya &amp; Karthik Reddy</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Naming Ceremony • Marathahalli</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              "Their photography and cinematic video coverage for our pre-wedding was world-class. From securing shoot permissions to delivering high-res albums in record time, Roshan and his crew were exceptional."
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-bold">
+              PR
             </div>
-
-            <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between">
-              <div>
-                <div class="flex text-secondary mb-4">
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                </div>
-                <p class="text-base text-on-surface italic leading-relaxed">“For our son's Namakarana in Marathahalli, we wanted authentic traditional aesthetics with zero hassle. B&R brought an exquisite carved wooden cradle and organized the pooja spread effortlessly.”</p>
-              </div>
-              <div class="mt-6 pt-4 border-t border-surface-container-high flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">AK</div>
-                <div>
-                  <h4 class="font-semibold text-primary">Ananya & Karthik Reddy</h4>
-                  <p class="text-sm text-on-surface-variant">Naming Ceremony • Marathahalli</p>
-                </div>
-              </div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Priya &amp; Rahul Sharma</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pre-Wedding Shoot &amp; Film • Indiranagar</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CUSTOMER DETAILS & BOOKING SECTION (Primary Conversion Area) -->
+<section class="w-full py-space-3xl bg-surface relative" id="booking-form" style="background-color: rgb(250, 247, 242);">
+<div class="max-w-[1320px] mx-auto px-gutter">
+<!-- Section Titles -->
+<div class="max-w-3xl mb-space-2xl">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-space-xs">Reserve Your Date</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Plan Your Next Celebration With B&amp;R Events</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+          Share your event requirements and our senior event curator will connect with you within 2 hours with customized themes, mood boards, and transparent budget estimates.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left: Customer Booking Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-xl rounded-2xl shadow-xl" style="background-color: rgb(255, 253, 249); border: 1px solid rgb(234, 227, 215); box-shadow: rgba(78, 5, 26, 0.05) 0px 10px 30px;">
+<form class="flex flex-col gap-space-md" id="inquiryForm">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" for="fullName">Full Name *</label>
+<input class="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all font-body-md text-body-md" id="fullName" placeholder="e.g., Rajesh Kumar" required="" type="text">
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" for="phoneNumber">Phone Number *</label>
+<input class="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all font-body-md text-body-md" id="phoneNumber" placeholder="+91 98765 43210" required="" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" for="emailAddress">Email Address *</label>
+<input class="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all font-body-md text-body-md" id="emailAddress" placeholder="name@domain.com" required="" type="email">
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" for="eventType">Event Type *</label>
+<select class="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all font-body-md text-body-md cursor-pointer" id="eventType" required="">
+<option disabled="" selected="" value="">Select an Event Category</option>
+<option value="Wedding / Grand Reception">Weddings &amp; Grand Receptions</option>
+<option value="Pre-Wedding / Photography">Marriage &amp; Pre-Wedding Photography</option>
+<option value="Naming Ceremony">Naming Ceremony (Namakarana)</option>
+<option value="Food &amp; Catering">Food &amp; Royal Catering Service</option>
+<option value="Birthday Celebration">Birthday Parties &amp; Anniversaries</option>
+<option value="Corporate Event">Corporate Galas &amp; Product Launches</option>
+<option value="Other Celebrations">Other Bespoke Celebration</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" for="eventDate">Estimated Event Date *</label>
+<input class="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all font-body-md text-body-md" id="eventDate" required="" type="date">
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" for="guestCount">Approximate Guest Count</label>
+<select class="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all font-body-md text-body-md cursor-pointer" id="guestCount">
+<option value="50-100">Intimate Gathering (50 - 150 guests)</option>
+<option selected="" value="150-350">Grand Family Celebration (150 - 350 guests)</option>
+<option value="350-700">Royal Affair (350 - 700 guests)</option>
+<option value="700+">Mega Extravaganza (700+ guests)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" for="venueLocation">Preferred Venue / Area in Bangalore</label>
+<input class="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all font-body-md text-body-md" id="venueLocation" placeholder="e.g., Marathahalli, Whitefield, Palace Grounds, or Haven't Decided" type="text">
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" for="requirements">Event Vision &amp; Custom Requirements</label>
+<textarea class="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all font-body-md text-body-md resize-none" id="requirements" placeholder="Tell us about your theme preferences, food choices (Veg / Non-veg), decor style, or special rituals..." rows="3"></textarea>
+</div>
+<button class="w-full py-space-md px-space-lg bg-primary-container hover:bg-primary text-on-primary font-title-lg text-title-lg rounded-lg shadow-lg shadow-primary/25 transition-all duration-300 flex items-center justify-center gap-space-sm mt-space-xs" type="submit">
+<span class="material-symbols-outlined">send</span>
+<span class="">Request Free Consultation &amp; Quote</span>
+</button>
+<!-- EXPORT_BUTTON_PLACEHOLDER -->
+<!-- Success Alert Placeholder -->
+<div class="hidden p-space-md bg-tertiary-fixed text-on-tertiary-fixed rounded-lg text-center font-body-md text-body-md" id="formSuccessMessage">
+              Thank you! Your inquiry has been received. Senior Event Curator Roshan will contact you shortly at your provided phone number.
             </div>
-
-            <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between">
-              <div>
-                <div class="flex text-secondary mb-4">
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                  <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">star</span>
-                </div>
-                <p class="text-base text-on-surface italic leading-relaxed">“Their photography and cinematic video coverage for our pre-wedding was world-class. From securing shoot permissions to delivering high-res albums in record time, Roshan and his crew were exceptional.”</p>
-              </div>
-              <div class="mt-6 pt-4 border-t border-surface-container-high flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-bold">PR</div>
-                <div>
-                  <h4 class="font-semibold text-primary">Priya & Rahul Sharma</h4>
-                  <p class="text-sm text-on-surface-variant">Pre-Wedding Shoot & Film • Indiranagar</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="booking-form" class="w-full py-20 bg-surface relative">
-        <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="max-w-3xl mb-12">
-            <span class="text-secondary uppercase tracking-[0.18em] text-[12px] block mb-3 font-semibold">Reserve Your Date</span>
-            <h2 class="font-serif text-4xl text-primary">Plan Your Next Celebration With B&R Events</h2>
-            <p class="text-lg text-on-surface-variant mt-3">Share your event requirements and our senior event curator will connect with you within 2 hours with customized themes, mood boards, and transparent budget estimates.</p>
-          </div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            <div class="lg:col-span-7 bg-surface-container-lowest p-8 rounded-2xl shadow-xl border border-[#eae3d7]">
-              <form id="inquiryForm" class="flex flex-col gap-5" novalidate>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div class="flex flex-col gap-2">
-                    <label for="fullName" class="text-[11px] uppercase tracking-[0.14em] text-on-surface-variant font-semibold">Full Name *</label>
-                    <input id="fullName" name="fullName" type="text" class="w-full px-4 py-3 bg-surface-container-low text-on-surface rounded-lg border border-[#e5ddd0] focus:outline-none focus:ring-2 focus:ring-primary/30" required />
-                  </div>
-
-                  <div class="flex flex-col gap-2">
-                    <label for="phoneNumber" class="text-[11px] uppercase tracking-[0.14em] text-on-surface-variant font-semibold">Phone Number *</label>
-                    <input id="phoneNumber" name="phoneNumber" type="tel" class="w-full px-4 py-3 bg-surface-container-low text-on-surface rounded-lg border border-[#e5ddd0] focus:outline-none focus:ring-2 focus:ring-primary/30" required />
-                  </div>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div class="flex flex-col gap-2">
-                    <label for="emailAddress" class="text-[11px] uppercase tracking-[0.14em] text-on-surface-variant font-semibold">Email Address *</label>
-                    <input id="emailAddress" name="emailAddress" type="email" class="w-full px-4 py-3 bg-surface-container-low text-on-surface rounded-lg border border-[#e5ddd0] focus:outline-none focus:ring-2 focus:ring-primary/30" required />
-                  </div>
-
-                  <div class="flex flex-col gap-2">
-                    <label for="eventType" class="text-[11px] uppercase tracking-[0.14em] text-on-surface-variant font-semibold">Event Type *</label>
-                    <select id="eventType" name="eventType" class="w-full px-4 py-3 bg-surface-container-low text-on-surface rounded-lg border border-[#e5ddd0] focus:outline-none focus:ring-2 focus:ring-primary/30" required>
-                      <option value="">Select an Event Category</option>
-                      <option value="Wedding / Grand Reception">Weddings & Grand Receptions</option>
-                      <option value="Pre-Wedding / Photography">Marriage & Pre-Wedding Photography</option>
-                      <option value="Naming Ceremony">Naming Ceremony (Namakarana)</option>
-                      <option value="Food & Catering">Food & Royal Catering Service</option>
-                      <option value="Birthday Celebration">Birthday Parties & Anniversaries</option>
-                      <option value="Corporate Event">Corporate Galas & Product Launches</option>
-                      <option value="Other Celebrations">Other Bespoke Celebration</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div class="flex flex-col gap-2">
-                    <label for="eventDate" class="text-[11px] uppercase tracking-[0.14em] text-on-surface-variant font-semibold">Estimated Event Date *</label>
-                    <input id="eventDate" name="eventDate" type="date" class="w-full px-4 py-3 bg-surface-container-low text-on-surface rounded-lg border border-[#e5ddd0] focus:outline-none focus:ring-2 focus:ring-primary/30" required />
-                  </div>
-
-                  <div class="flex flex-col gap-2">
-                    <label for="guestCount" class="text-[11px] uppercase tracking-[0.14em] text-on-surface-variant font-semibold">Approximate Guest Count</label>
-                    <select id="guestCount" name="guestCount" class="w-full px-4 py-3 bg-surface-container-low text-on-surface rounded-lg border border-[#e5ddd0] focus:outline-none focus:ring-2 focus:ring-primary/30">
-                      <option value="50-100">Intimate Gathering (50 - 150 guests)</option>
-                      <option value="150-350" selected>Grand Family Celebration (150 - 350 guests)</option>
-                      <option value="350-700">Royal Affair (350 - 700 guests)</option>
-                      <option value="700+">Mega Extravaganza (700+ guests)</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="flex flex-col gap-2">
-                  <label for="venueLocation" class="text-[11px] uppercase tracking-[0.14em] text-on-surface-variant font-semibold">Preferred Venue / Area in Bangalore</label>
-                  <input id="venueLocation" name="venueLocation" type="text" class="w-full px-4 py-3 bg-surface-container-low text-on-surface rounded-lg border border-[#e5ddd0] focus:outline-none focus:ring-2 focus:ring-primary/30" placeholder="e.g., Palace Grounds, Whitefield, Marathahalli" />
-                </div>
-
-                <div class="flex flex-col gap-2">
-                  <label for="requirements" class="text-[11px] uppercase tracking-[0.14em] text-on-surface-variant font-semibold">Event Vision & Custom Requirements</label>
-                  <textarea id="requirements" name="requirements" rows="5" class="w-full px-4 py-3 bg-surface-container-low text-on-surface rounded-lg border border-[#e5ddd0] focus:outline-none focus:ring-2 focus:ring-primary/30" placeholder="Describe your mood, venue, guest style, color palette, catering preferences, and special moments"></textarea>
-                </div>
-
-                <button type="submit" class="w-full py-4 px-6 bg-primary text-on-primary rounded-lg shadow-lg shadow-primary/25 hover:bg-primary-container transition-all flex items-center justify-center gap-2 font-semibold text-lg">
-                  <span class="material-symbols-outlined">send</span>
-                  <span>Request Free Consultation & Quote</span>
-                </button>
-
-                <div id="formSuccessMessage" class="hidden p-4 bg-tertiary-container text-on-tertiary rounded-lg text-center font-medium">
-                  Thank you! Your inquiry has been received. Senior Event Curator Roshan will contact you shortly at your provided phone number.
-                </div>
-                <div id="formErrorMessage" class="hidden p-4 bg-red-100 text-red-700 rounded-lg text-center" role="alert"></div>
-              </form>
-            </div>
-
-            <div class="lg:col-span-5 flex flex-col gap-6">
-              <div class="bg-primary text-on-primary p-8 rounded-2xl shadow-xl flex flex-col justify-between">
-                <div>
-                  <div class="flex items-center gap-2 mb-4">
-                    <span class="w-3 h-3 rounded-full bg-secondary animate-ping"></span>
-                    <span class="text-[11px] uppercase tracking-[0.18em] text-secondary-fixed">Direct Coordination Hub</span>
-                  </div>
-                  <h3 class="font-serif text-3xl mb-2">B&R Events Bangalore</h3>
-                  <p class="text-base text-on-primary/80 mb-6">Walk into our Marathahalli consultation studio or speak directly with our senior event architects today.</p>
-
-                  <div class="flex flex-col sm:flex-row gap-3 mb-8">
-                    <a href="tel:+917338133357" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-secondary text-on-secondary font-semibold rounded-lg hover:bg-secondary/90 transition-all">
-                      <span class="material-symbols-outlined text-[18px]">call</span>
-                      <span>Call +91 7338133357</span>
+<div class="hidden p-space-md bg-error-container text-on-error-container rounded-lg text-center font-body-md text-body-md" id="formErrorMessage" role="alert"></div>
+</form>
+</div>
+<!-- Right: Official Contact Card & Headquarters Map Card -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Corporate Details Card -->
+<div class="bg-primary text-on-primary p-space-xl rounded-2xl shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Direct Coordination Hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mb-space-xs">B&amp;R Events Bangalore</h3>
+<p class="font-body-md text-body-md text-on-primary/80 mb-space-lg">
+                Walk into our Marathahalli consultation studio or speak directly with our senior event architects today.
+              </p>
+<!-- Quick Communication Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-space-xs mb-space-lg">
+<a class="flex-1 inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm bg-secondary text-on-secondary font-title-md text-title-md rounded-lg hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors" href="tel:+917338133357">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span class="">Call +91 7338133357</span>
+</a>
+<a class="flex-1 inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm bg-tertiary-container text-on-tertiary font-title-md text-title-md rounded-lg hover:bg-tertiary transition-colors" href="https://wa.me/917338133357?text=Hello%20BR%20Events,%20I%20would%20like%20to%20inquire%20about%20event%20planning%20services" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="">WhatsApp Chat</span>
+</a>
+</div>
+<!-- Official Metadata List -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">location_on</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed block">Office Address</span>
+<p class="font-body-sm text-body-sm text-on-primary/90 mt-0.5 leading-relaxed">
+                      No 55 5th cross Manjunatha layout, Munnekolala, Marathahalli, Bangalore 560037
+                    </p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">mail</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed block">Official Email</span>
+<a class="font-body-sm text-body-sm text-on-primary hover:text-secondary-fixed transition-colors underline underline-offset-2" href="mailto:roshanlakshman1971@gmail.com">
+                      roshanlakshman1971@gmail.com
                     </a>
-                    <a href="https://wa.me/917338133357" target="_blank" rel="noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-tertiary-container text-on-tertiary font-semibold rounded-lg hover:bg-tertiary/90 transition-all">
-                      <span class="material-symbols-outlined text-[18px]">chat</span>
-                      <span>WhatsApp Chat</span>
-                    </a>
-                  </div>
-
-                  <div class="flex flex-col gap-5 pt-2">
-                    <div class="flex items-start gap-3">
-                      <div class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center shrink-0">
-                        <span class="material-symbols-outlined text-secondary-fixed text-[20px]">location_on</span>
-                      </div>
-                      <div>
-                        <span class="text-[11px] uppercase tracking-[0.18em] text-secondary-fixed block">Office Address</span>
-                        <p class="text-sm text-on-primary/90 mt-1 leading-relaxed">No 55 5th cross Manjunatha layout, Munnekolala, Marathahalli, Bangalore 560037</p>
-                      </div>
-                    </div>
-
-                    <div class="flex items-start gap-3">
-                      <div class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center shrink-0">
-                        <span class="material-symbols-outlined text-secondary-fixed text-[20px]">mail</span>
-                      </div>
-                      <div>
-                        <span class="text-[11px] uppercase tracking-[0.18em] text-secondary-fixed block">Official Email</span>
-                        <a href="mailto:roshanlakshman1971@gmail.com" class="text-sm text-on-primary underline underline-offset-2 hover:text-secondary-fixed transition-colors">roshanlakshman1971@gmail.com</a>
-                      </div>
-                    </div>
-
-                    <div class="flex items-start gap-3">
-                      <div class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center shrink-0">
-                        <span class="material-symbols-outlined text-secondary-fixed text-[20px]">schedule</span>
-                      </div>
-                      <div>
-                        <span class="text-[11px] uppercase tracking-[0.18em] text-secondary-fixed block">Hours of Operation</span>
-                        <p class="text-sm text-on-primary/90 mt-1">Monday to Sunday: 09:00 AM – 09:00 PM IST</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="mt-6 pt-4 flex items-center justify-between text-on-primary/70 text-[11px] uppercase tracking-[0.16em]">
-                  <span>Licensed Event Decorator</span>
-                  <span>Karnataka GST Registered</span>
-                </div>
-              </div>
-
-              <div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm">
-                <div class="flex items-center justify-between mb-3">
-                  <span class="font-semibold text-primary flex items-center gap-2">
-                    <span class="material-symbols-outlined text-secondary text-[20px]">pin_drop</span>
-                    Munnekolala, Marathahalli Hub
-                  </span>
-                  <span class="text-[11px] uppercase tracking-[0.12em] text-on-surface-variant">East Bangalore</span>
-                </div>
-
-                <div class="w-full h-48 bg-surface-container-high rounded-xl overflow-hidden relative">
-                  <div class="absolute inset-0 flex flex-col items-center justify-center bg-surface-container-high/90 p-4 text-center">
-                    <span class="material-symbols-outlined text-4xl text-primary mb-2">map</span>
-                    <span class="font-semibold text-primary text-xl">B&R Events Studio</span>
-                    <p class="text-sm text-on-surface-variant mt-1 max-w-xs">5th Cross, Manjunatha Layout, Munnekolala, Bangalore</p>
-                    <a href="https://maps.google.com/?q=Munnekolala+Marathahalli+Bangalore+560037" target="_blank" rel="noreferrer" class="mt-3 inline-flex items-center gap-1 text-secondary font-semibold uppercase text-[11px] tracking-[0.14em] hover:underline">
-                      <span>Open in Google Maps</span>
-                      <span class="material-symbols-outlined text-[14px]">open_in_new</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">schedule</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed block">Hours of Operation</span>
+<p class="font-body-sm text-body-sm text-on-primary/90 mt-0.5">
+                      Monday to Sunday: 09:00 AM – 09:00 PM IST
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between text-on-primary/70 font-label-sm text-label-sm uppercase tracking-widest">
+<span class="">Licensed Event Decorator</span>
+<span class="">Karnataka GST Registered</span>
+</div>
+</div>
+<!-- Bangalore Map Integration Widget -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between mb-1">
+<span class="font-title-md text-title-md text-primary font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">pin_drop</span>
+                Munnekolala, Marathahalli Hub
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">East Bangalore</span>
+</div>
+<!-- Map Container with data-location -->
+<div class="w-full h-48 bg-surface-container-high rounded-xl overflow-hidden relative" data-location="Munnekolala Marathahalli Bangalore 560037">
+<div class="absolute inset-0 flex flex-col items-center justify-center bg-surface-container-high/90 p-space-md text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-space-xs">map</span>
+<span class="font-title-md text-title-md text-primary font-semibold">B&amp;R Events Studio</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-0.5">
+                  5th Cross, Manjunatha Layout, Munnekolala, Bangalore
+                </p>
+<a class="mt-space-sm inline-flex items-center gap-1 font-label-sm text-label-sm uppercase text-secondary font-bold hover:underline" href="https://maps.google.com/?q=Munnekolala+Marathahalli+Bangalore+560037" target="_blank">
+<span class="">Open in Google Maps</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low mt-space-3xl" style="background-color: rgb(241, 236, 226); border-top: 1px solid rgb(228, 220, 208);"><div class="max-w-[1320px] mx-auto px-gutter py-space-3xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="B&amp;R Events Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VLGYW2EW3wrv1KqDyR5YsB8ampetsGkGN-WWwIy4sVktZAQZrZwOO-EpAg1N5tB8Ja8QMgMmDkVb2bxtN_bemB89DD_29JrkG7GxgT_sbS0BVRFqH4hpbnsG2h5NlijwU_5_ZWSlDS-mh6GeQDrDBfWJElfWg_X0EHdzvuOGCkXygE4cZhsQIOuGSkTw8ZKL3aEA5sryYl9IPF6AQcDA1JjyUWD9_wS7BWcLp8SwT2o4NSDk0pv6pxC1M"><span class="font-headline-sm text-headline-sm text-primary font-semibold">B&amp;R Events</span></div><p class="font-headline-sm text-headline-sm italic text-secondary leading-snug">Curating Timeless Celebrations in Bangalore &amp; Beyond</p><p class="font-body-sm text-body-sm text-on-surface-variant">Bespoke event planning, majestic venue transformations, royal catering, and artistic photography for life's most cherished milestones.</p></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-primary font-semibold uppercase tracking-wider">Our Services</span><ul class="flex flex-col gap-space-xs"><li class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"><a class="" data-path="services" href="#">Weddings &amp; Receptions</a></li><li class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"><a class="" data-path="services" href="#">Marriage &amp; Pre-Wedding Photography</a></li><li class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"><a class="" data-path="services" href="#">Naming Ceremonies (Namakarana)</a></li><li class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"><a class="" data-path="services" href="#">Birthday Parties</a></li><li class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"><a class="" data-path="services" href="#">Corporate Events &amp; Galas</a></li><li class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"><button class="text-left hover:text-primary transition-colors cursor-pointer" onclick="openCateringModal()" type="button">Food &amp; Royal Catering</button></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-primary font-semibold uppercase tracking-wider">Bangalore Office</span><div class="flex items-start gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">location_on</span><p class="font-body-sm text-body-sm leading-relaxed text-on-surface-variant">No 55 5th cross Manjunatha layout Munnekolala Marathahalli Bangalore 560037</p></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-secondary shrink-0">call</span><a class="font-body-sm text-body-sm text-on-surface hover:text-primary transition-colors font-medium" href="tel:+917338133357">+91 7338133357</a></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-secondary shrink-0">mail</span><a class="font-body-sm text-body-sm text-on-surface hover:text-primary transition-colors" href="mailto:roshanlakshman1971@gmail.com">roshanlakshman1971@gmail.com</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-primary font-semibold uppercase tracking-wider">Hours &amp; Consultations</span><div class="flex items-start gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">schedule</span><div class="flex flex-col"><span class="font-body-md text-body-md text-on-surface font-medium">Monday – Sunday</span><span class="font-body-sm text-body-sm text-on-surface-variant">09:00 AM – 09:00 PM IST</span></div></div><div class="p-space-md bg-surface-container rounded-lg"><p class="font-title-md text-title-md text-primary font-semibold">Private Venue Previews</p><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Available by appointment across all Bangalore destination venues and banquet halls.</p></div></div></div><div class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p class="">© 2025 B&amp;R Events. All rights reserved. Curating Timeless Celebrations.</p><p class="text-secondary font-medium">Marathahalli, Bangalore, Karnataka</p></div></div></footer>
+</div></main><footer class="w-full bg-surface-container-low mt-space-3xl" style="background-color: rgb(241, 236, 226); border-top: 1px solid rgb(228, 220, 208);"><div class="max-w-[1320px] mx-auto px-gutter py-space-3xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="B&amp;R Events Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VLGYW2EW3wrv1KqDyR5YsB8ampetsGkGN-WWwIy4sVktZAQZrZwOO-EpAg1N5tB8Ja8QMgMmDkVb2bxtN_bemB89DD_29JrkG7GxgT_sbS0BVRFqH4hpbnsG2h5NlijwU_5_ZWSlDS-mh6GeQDrDBfWJElfWg_X0EHdzvuOGCkXygE4cZhsQIOuGSkTw8ZKL3aEA5sryYl9IPF6AQcDA1JjyUWD9_wS7BWcLp8SwT2o4NSDk0pv6pxC1M"><span class="font-headline-sm text-headline-sm text-primary font-semibold">B&amp;R Events</span></div><p class="font-headline-sm text-headline-sm italic text-secondary leading-snug">Curating Timeless Celebrations in Bangalore &amp; Beyond</p><p class="font-body-sm text-body-sm text-on-surface-variant">Bespoke event planning, majestic venue transformations, royal catering, and artistic photography for life's most cherished milestones.</p></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-primary font-semibold uppercase tracking-wider">Our Services</span><ul class="flex flex-col gap-space-xs"><li class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"><a class="" data-path="services" href="#services-section">Weddings &amp; Receptions</a></li><li class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"><a class="" data-path="services" href="#services-section">Marriage &amp; Pre-Wedding Photography</a></li><li class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"><a class="" data-path="services" href="#services-section">Naming Ceremonies (Namakarana)</a></li><li class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"><a class="" data-path="services" href="#services-section">Birthday Parties</a></li><li class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"><a class="" data-path="services" href="#services-section">Corporate Events &amp; Galas</a></li><li class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"><button class="text-left hover:text-primary transition-colors cursor-pointer" onclick="openCateringModal()" type="button">Food &amp; Royal Catering</button></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-primary font-semibold uppercase tracking-wider">Bangalore Office</span><div class="flex items-start gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">location_on</span><p class="font-body-sm text-body-sm leading-relaxed text-on-surface-variant">No 55 5th cross Manjunatha layout Munnekolala Marathahalli Bangalore 560037</p></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-secondary shrink-0">call</span><a class="font-body-sm text-body-sm text-on-surface hover:text-primary transition-colors font-medium" href="tel:+917338133357">+91 7338133357</a></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-secondary shrink-0">mail</span><a class="font-body-sm text-body-sm text-on-surface hover:text-primary transition-colors" href="mailto:roshanlakshman1971@gmail.com">roshanlakshman1971@gmail.com</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-primary font-semibold uppercase tracking-wider">Hours &amp; Consultations</span><div class="flex items-start gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">schedule</span><div class="flex flex-col"><span class="font-body-md text-body-md text-on-surface font-medium">Monday – Sunday</span><span class="font-body-sm text-body-sm text-on-surface-variant">09:00 AM – 09:00 PM IST</span></div></div><div class="p-space-md bg-surface-container rounded-lg"><p class="font-title-md text-title-md text-primary font-semibold">Private Venue Previews</p><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Available by appointment across all Bangalore destination venues and banquet halls.</p></div></div></div><div class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p class="">© 2025 B&amp;R Events. All rights reserved. Curating Timeless Celebrations.</p><p class="text-secondary font-medium">Marathahalli, Bangalore, Karnataka</p></div></div></footer>
+<!-- LUXURY CATERING MENU MODAL -->
+<div aria-labelledby="catering-modal-title" aria-modal="true" class="fixed inset-0 z-[100] hidden items-center justify-center overflow-y-auto px-4 py-6 sm:py-10 bg-black/60 backdrop-blur-sm transition-opacity duration-300 opacity-0" id="catering-menu-modal" role="dialog">
+<div class="relative w-full max-w-5xl bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden border border-outline-variant/40 my-auto transform transition-all duration-300 scale-95" id="catering-modal-card">
+<!-- Modal Header Banner -->
+<div class="relative bg-gradient-to-r from-primary via-primary-container to-primary px-6 sm:px-10 py-7 text-on-primary">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-secondary/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between gap-4 relative z-10">
+<div class="flex flex-col gap-1.5">
+<div class="inline-flex items-center gap-2 self-start px-3 py-0.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-sm border border-secondary-fixed/40 text-secondary-fixed text-label-sm font-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">restaurant</span>
+            Gourmet Royal Feast &amp; Live Stations
+          </div>
+<h2 class="font-headline-md text-2xl sm:text-3xl text-on-primary font-serif tracking-tight" id="catering-modal-title">B&amp;R Royal Catering Menu</h2>
+<p class="font-body-sm text-sm sm:text-base text-on-primary/85 max-w-2xl">
+            Curated Authentic South Indian &amp; North Indian Delicacies prepared by master chefs using artisanal spices and cold-pressed pure oils.
+          </p>
+</div>
+<button aria-label="Close catering menu modal" class="w-10 h-10 rounded-full bg-surface-container-lowest/10 hover:bg-surface-container-lowest/25 text-on-primary flex items-center justify-center transition-colors cursor-pointer shrink-0" onclick="closeCateringModal()" type="button">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+<!-- Dietary Guarantee Badges -->
+<div class="flex flex-wrap items-center gap-2.5 mt-5 pt-4 border-t border-on-primary/15 text-xs text-on-primary/95">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest/15 backdrop-blur-sm rounded-full font-medium">
+<span class="material-symbols-outlined text-secondary-fixed text-[16px]">eco</span>
+          100% Pure Brahmin &amp; Jain Preparation Available
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest/15 backdrop-blur-sm rounded-full font-medium">
+<span class="material-symbols-outlined text-secondary-fixed text-[16px]">verified</span>
+          FSSAI Certified Commercial Kitchen
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest/15 backdrop-blur-sm rounded-full font-medium">
+<span class="material-symbols-outlined text-secondary-fixed text-[16px]">star</span>
+          Silverware &amp; White-Glove Service Options
+        </span>
+</div>
+</div>
+<!-- Cuisine Navigation Pills -->
+<div class="flex border-b border-surface-container-highest px-6 sm:px-10 bg-surface-container-low/60 gap-4 pt-3">
+<button class="pb-3 border-b-2 border-primary text-primary font-title-md text-sm sm:text-base font-semibold transition-all flex items-center gap-2" id="tab-btn-south" onclick="switchCuisineTab('south')" type="button">
+<span class="material-symbols-outlined text-[18px]">spa</span>
+<span class="">South Indian Heritage Feast (Elai Sappadu)</span>
+</button>
+<button class="pb-3 border-b-2 border-transparent text-on-surface-variant hover:text-primary font-title-md text-sm sm:text-base font-semibold transition-all flex items-center gap-2" id="tab-btn-north" onclick="switchCuisineTab('north')" type="button">
+<span class="material-symbols-outlined text-[18px]">dinner_dining</span>
+<span class="">North Indian &amp; Awadhi Shahi Dastarkhwan</span>
+</button>
+</div>
+<!-- Modal Scrollable Content -->
+<div class="px-6 sm:px-10 py-6 max-h-[58vh] overflow-y-auto space-y-6">
+<!-- TAB 1: South Indian Heritage Feast -->
+<div class="space-y-6" id="cuisine-south-panel">
+<div class="p-3.5 bg-secondary-fixed/20 border border-secondary-fixed-dim/40 rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl shrink-0">local_florist</span>
+<p class="font-body-sm text-xs sm:text-sm text-on-surface">
+            Traditional banana leaf banquet service (Vazhai Ilai Sappadu) featuring ancestral recipes from Mysore, Udupi, Chettinad, and Tanjore royal households.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Starters & Tiffin -->
+<div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="w-7 h-7 rounded-md bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">bakery_dining</span>
+</span>
+<h3 class="font-title-md font-bold text-primary">Starters &amp; Tiffin</h3>
+</div>
+<ul class="space-y-2.5 font-body-sm text-sm text-on-surface/90">
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Mysore Mallige Idli</strong> <span class="text-on-surface-variant text-xs block">Steaming soft with fresh coconut &amp; tomato thokku</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Medu Vada &amp; Keerai Vadai</strong> <span class="text-on-surface-variant text-xs block">Crispy golden crust with triad of artisan chutneys</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Ghee Podi Button Idlis</strong> <span class="text-on-surface-variant text-xs block">Tossed in gun powder &amp; fresh churned A2 desi ghee</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Live Mysore Masala Dosa</strong> <span class="text-on-surface-variant text-xs block">Red garlic chutney smear with spiced potato bhaji</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Cocktail Kuzhi Paniyaram</strong> <span class="text-on-surface-variant text-xs block">Seasoned shallots, mustard &amp; coriander tempering</span></div>
+</li>
+</ul>
+</div>
+<div class="mt-4 pt-2 border-t border-outline-variant/30 text-xs text-secondary font-semibold uppercase tracking-wider">
+              Live Tawa &amp; Steam Counters
             </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="w-full bg-surface-container-low border-t border-[#eae3d7]">
-      <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-on-surface-variant">
-        <p>© 2025 B&R Events • Luxury Celebrations Bangalore</p>
-        <div class="flex items-center gap-4 flex-wrap">
-          <a href="#services-section" class="hover:text-primary">Services</a>
-          <a href="#gallery-section" class="hover:text-primary">Gallery</a>
-          <a href="#booking-form" class="hover:text-primary">Book Your Event</a>
-        </div>
-      </div>
-    </footer>
-
-    <div id="catering-menu-modal" class="fixed inset-0 hidden items-center justify-center z-[100] px-4 py-6 modal-backdrop">
-      <div id="catering-modal-card" class="modal-card relative w-full max-w-5xl bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden border border-outline-variant/40 my-auto">
-        <div class="relative bg-gradient-to-r from-primary via-primary-container to-primary px-6 sm:px-10 py-7 text-on-primary">
-          <div class="absolute -right-12 -top-12 w-48 h-48 bg-secondary/20 rounded-full blur-2xl pointer-events-none"></div>
-          <div class="flex items-start justify-between gap-4 relative z-10">
-            <div class="flex flex-col gap-1.5">
-              <div class="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-surface-container-lowest/15 border border-secondary-fixed/40 text-secondary-fixed text-[11px] uppercase tracking-[0.16em] font-semibold">
-                <span class="material-symbols-outlined text-[16px]">restaurant</span>
-                Gourmet Royal Feast & Live Stations
-              </div>
-              <h2 id="catering-modal-title" class="font-serif text-3xl sm:text-4xl text-on-primary mt-2">B&R Royal Catering Menu</h2>
-              <p class="text-sm sm:text-base text-on-primary/85 max-w-2xl">Curated Authentic South Indian & North Indian Delicacies prepared by master chefs using artisanal spices and cold-pressed pure oils.</p>
+</div>
+<!-- Grand Elai Mains -->
+<div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="w-7 h-7 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">rice_bowl</span>
+</span>
+<h3 class="font-title-md font-bold text-primary">Royal Mains &amp; Curries</h3>
+</div>
+<ul class="space-y-2.5 font-body-sm text-sm text-on-surface/90">
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Authentic Mysore Bisi Bele Bath</strong> <span class="text-on-surface-variant text-xs block">Served piping hot with crunchy Ghee Boondi</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Traditional South Sambar &amp; Udupi Rasam</strong> <span class="text-on-surface-variant text-xs block">Shallots, drumsticks &amp; hand-ground spices</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Ennai Kathirikai &amp; Kerala Avial</strong> <span class="text-on-surface-variant text-xs block">Stuffed small brinjals in rich tamarind sesame gravy</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Malabar Parotta with Veg Kurma</strong> <span class="text-on-surface-variant text-xs block">Flaky layered parottas with rich coconut vegetable stew</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Bagala Bath (Curd Rice)</strong> <span class="text-on-surface-variant text-xs block">Tempered with mustard, ginger, green grapes &amp; anar</span></div>
+</li>
+</ul>
+</div>
+<div class="mt-4 pt-2 border-t border-outline-variant/30 text-xs text-secondary font-semibold uppercase tracking-wider">
+              Unlimited Table Service
             </div>
-            <button type="button" aria-label="Close catering menu modal" onclick="closeCateringModal()" class="w-10 h-10 rounded-full bg-surface-container-lowest/10 hover:bg-surface-container-lowest/25 text-on-primary flex items-center justify-center transition-colors">
-              <span class="material-symbols-outlined text-2xl">close</span>
-            </button>
-          </div>
-
-          <div class="flex flex-wrap items-center gap-2.5 mt-5 pt-4 border-t border-on-primary/15 text-xs text-on-primary/95">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest/15 rounded-full font-medium"><span class="material-symbols-outlined text-secondary-fixed text-[16px]">eco</span> 100% Pure Brahmin & Jain Preparation Available</span>
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest/15 rounded-full font-medium"><span class="material-symbols-outlined text-secondary-fixed text-[16px]">verified</span> FSSAI Certified Commercial Kitchen</span>
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest/15 rounded-full font-medium"><span class="material-symbols-outlined text-secondary-fixed text-[16px]">star</span> Silverware & White-Glove Service Options</span>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap border-b border-surface-container-highest px-4 sm:px-10 bg-surface-container-low/60 gap-2 pt-3">
-          <button id="tab-btn-south" type="button" onclick="switchCuisineTab('south')" class="pb-3 border-b-2 border-primary text-primary font-semibold flex items-center gap-2 whitespace-nowrap text-sm sm:text-base">
-            <span class="material-symbols-outlined text-[18px]">spa</span>
-            <span>South Indian Heritage Feast</span>
-          </button>
-          <button id="tab-btn-north" type="button" onclick="switchCuisineTab('north')" class="pb-3 border-b-2 border-transparent text-on-surface-variant hover:text-primary font-semibold flex items-center gap-2 whitespace-nowrap text-sm sm:text-base">
-            <span class="material-symbols-outlined text-[18px]">dinner_dining</span>
-            <span>North Indian & Awadhi Shahi Dastarkhwan</span>
-          </button>
-        </div>
-
-        <div class="px-6 sm:px-10 py-6 max-h-[58vh] overflow-y-auto space-y-6">
-          <div id="cuisine-south-panel" class="space-y-6">
-            <div class="p-3.5 bg-secondary/10 border border-secondary/30 rounded-xl flex items-center gap-3">
-              <span class="material-symbols-outlined text-secondary text-2xl shrink-0">local_florist</span>
-              <p class="text-sm text-on-surface">Traditional banana leaf banquet service featuring ancestral recipes from Mysore, Udupi, Chettinad, and Tanjore royal households.</p>
+</div>
+<!-- Desserts & Beverages -->
+<div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="w-7 h-7 rounded-md bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">coffee</span>
+</span>
+<h3 class="font-title-md font-bold text-primary">Sweet Heirlooms &amp; Kaapi</h3>
+</div>
+<ul class="space-y-2.5 font-body-sm text-sm text-on-surface/90">
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Elaneer (Tender Coconut) Payasam</strong> <span class="text-on-surface-variant text-xs block">Creamy delicacy made from fresh coconut water &amp; pulp</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Royal Mysore Pak</strong> <span class="text-on-surface-variant text-xs block">Melt-in-mouth golden ghee texture, traditional recipe</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Akkaravadisal</strong> <span class="text-on-surface-variant text-xs block">Traditional Iyengar temple recipe with jaggery &amp; milk</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Filter Kaapi in Brass Davarah</strong> <span class="text-on-surface-variant text-xs block">Chikmagalur freshly roasted plantation degree coffee</span></div>
+</li>
+</ul>
+</div>
+<div class="mt-4 pt-2 border-t border-outline-variant/30 text-xs text-secondary font-semibold uppercase tracking-wider">
+              Traditional Brass Davarah Service
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-              <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30">
-                <div class="flex items-center gap-2 mb-3">
-                  <span class="w-7 h-7 rounded-md bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">bakery_dining</span></span>
-                  <h3 class="font-semibold text-primary">Starters & Tiffin</h3>
-                </div>
-                <ul class="space-y-2.5 text-sm text-on-surface/90">
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Mysore Mallige Idli</strong><span class="text-on-surface-variant text-xs block">Steaming soft with fresh coconut & tomato thokku</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Medu Vada & Keerai Vadai</strong><span class="text-on-surface-variant text-xs block">Crispy golden crust with triad of artisan chutneys</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Ghee Podi Button Idlis</strong><span class="text-on-surface-variant text-xs block">Tossed in gun powder & fresh churned A2 desi ghee</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Live Mysore Masala Dosa</strong><span class="text-on-surface-variant text-xs block">Red garlic chutney smear with spiced potato bhaji</span></div></li>
-                </ul>
-                <div class="mt-4 pt-2 border-t border-outline-variant/30 text-[11px] text-secondary font-semibold uppercase tracking-[0.12em]">Live Tawa & Steam Counters</div>
-              </div>
-
-              <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30">
-                <div class="flex items-center gap-2 mb-3">
-                  <span class="w-7 h-7 rounded-md bg-secondary text-on-secondary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">rice_bowl</span></span>
-                  <h3 class="font-semibold text-primary">Royal Mains & Curries</h3>
-                </div>
-                <ul class="space-y-2.5 text-sm text-on-surface/90">
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Authentic Mysore Bisi Bele Bath</strong><span class="text-on-surface-variant text-xs block">Served piping hot with crunchy Ghee Boondi</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Traditional South Sambar & Udupi Rasam</strong><span class="text-on-surface-variant text-xs block">Shallots, drumsticks & hand-ground spices</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Ennai Kathirikai & Kerala Avial</strong><span class="text-on-surface-variant text-xs block">Stuffed small brinjals in rich tamarind sesame gravy</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Malabar Parotta with Veg Kurma</strong><span class="text-on-surface-variant text-xs block">Flaky layered parottas with rich coconut vegetable stew</span></div></li>
-                </ul>
-                <div class="mt-4 pt-2 border-t border-outline-variant/30 text-[11px] text-secondary font-semibold uppercase tracking-[0.12em]">Unlimited Table Service</div>
-              </div>
-
-              <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30">
-                <div class="flex items-center gap-2 mb-3">
-                  <span class="w-7 h-7 rounded-md bg-tertiary-container text-on-tertiary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">coffee</span></span>
-                  <h3 class="font-semibold text-primary">Sweet Heirlooms & Kaapi</h3>
-                </div>
-                <ul class="space-y-2.5 text-sm text-on-surface/90">
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Elaneer Payasam</strong><span class="text-on-surface-variant text-xs block">Creamy delicacy made from fresh coconut water & pulp</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Royal Mysore Pak</strong><span class="text-on-surface-variant text-xs block">Melt-in-mouth golden ghee texture, traditional recipe</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Akkaravadisal</strong><span class="text-on-surface-variant text-xs block">Traditional Iyengar temple recipe with jaggery & milk</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Filter Kaapi in Brass Davarah</strong><span class="text-on-surface-variant text-xs block">Chikmagalur freshly roasted plantation coffee</span></div></li>
-                </ul>
-                <div class="mt-4 pt-2 border-t border-outline-variant/30 text-[11px] text-secondary font-semibold uppercase tracking-[0.12em]">Traditional Brass Davarah Service</div>
-              </div>
+</div>
+</div>
+</div>
+<!-- TAB 2: North Indian & Awadhi Shahi Dastarkhwan -->
+<div class="hidden space-y-6" id="cuisine-north-panel">
+<div class="p-3.5 bg-secondary-fixed/20 border border-secondary-fixed-dim/40 rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl shrink-0">kebab_dining</span>
+<p class="font-body-sm text-xs sm:text-sm text-on-surface">
+            Regal Mughlai, Awadhi, and Punjabi culinary masterpieces. Features live charcoal clay tandoors, slow dum cooking, and exquisite royal silver platters.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Tandoori & Chaat Starters -->
+<div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="w-7 h-7 rounded-md bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">outdoor_grill</span>
+</span>
+<h3 class="font-title-md font-bold text-primary">Shahi Starters &amp; Chaat</h3>
+</div>
+<ul class="space-y-2.5 font-body-sm text-sm text-on-surface/90">
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Dilli 6 Palak Patta Chaat</strong> <span class="text-on-surface-variant text-xs block">Crispy batter-fried spinach, sweetened yogurt, saunth chutney</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Paneer Tikka Angara</strong> <span class="text-on-surface-variant text-xs block">Smoked cottage cheese cubes with bell peppers &amp; hung curd</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Tandoori Bharwan Khumb</strong> <span class="text-on-surface-variant text-xs block">Mushrooms stuffed with cheese, nuts &amp; aromatic spices</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Subz Galouti Kebab</strong> <span class="text-on-surface-variant text-xs block">Melt-in-mouth spiced vegetable patties served on mini parathas</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Crispy Amritsari Corn Tikki</strong> <span class="text-on-surface-variant text-xs block">Golden spiced patties served with tangy mint dip</span></div>
+</li>
+</ul>
+</div>
+<div class="mt-4 pt-2 border-t border-outline-variant/30 text-xs text-secondary font-semibold uppercase tracking-wider">
+              Charcoal Tandoor &amp; Live Chaat Cart
             </div>
-          </div>
-
-          <div id="cuisine-north-panel" class="hidden space-y-6">
-            <div class="p-3.5 bg-secondary/10 border border-secondary/30 rounded-xl flex items-center gap-3">
-              <span class="material-symbols-outlined text-secondary text-2xl shrink-0">kebab_dining</span>
-              <p class="text-sm text-on-surface">Regal Mughlai, Awadhi, and Punjabi culinary masterpieces. Features live charcoal clay tandoors, slow dum cooking, and exquisite royal silver platters.</p>
+</div>
+<!-- Awadhi Mains & Tandoor Breads -->
+<div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="w-7 h-7 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">ramen_dining</span>
+</span>
+<h3 class="font-title-md font-bold text-primary">Awadhi Dum Mains</h3>
+</div>
+<ul class="space-y-2.5 font-body-sm text-sm text-on-surface/90">
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Dal Makhani (24-Hour Simmered)</strong> <span class="text-on-surface-variant text-xs block">Slow cooked over embers, topped with churned white butter</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Paneer Butter Masala &amp; Navratan Korma</strong> <span class="text-on-surface-variant text-xs block">Velvety cashew-tomato gravies infused with kasuri methi</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Dum Subz Handi Biryani</strong> <span class="text-on-surface-variant text-xs block">Long grain basmati sealed in clay pot with saffron &amp; kewra</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Mirchi Ka Salan &amp; Burani Raita</strong> <span class="text-on-surface-variant text-xs block">Garlic-infused tempered curd &amp; peanut-sesame gravy</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Live Tandoori Naan &amp; Laccha Paratha</strong> <span class="text-on-surface-variant text-xs block">Garlic naan, butter naan, chur-chur naan &amp; Roomali Roti</span></div>
+</li>
+</ul>
+</div>
+<div class="mt-4 pt-2 border-t border-outline-variant/30 text-xs text-secondary font-semibold uppercase tracking-wider">
+              Clay Handi Dum Presentation
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-              <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30">
-                <div class="flex items-center gap-2 mb-3">
-                  <span class="w-7 h-7 rounded-md bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">outdoor_grill</span></span>
-                  <h3 class="font-semibold text-primary">Shahi Starters & Chaat</h3>
-                </div>
-                <ul class="space-y-2.5 text-sm text-on-surface/90">
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Dilli 6 Palak Patta Chaat</strong><span class="text-on-surface-variant text-xs block">Crispy batter-fried spinach, sweetened yogurt, saunth chutney</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Paneer Tikka Angara</strong><span class="text-on-surface-variant text-xs block">Smoked cottage cheese cubes with bell peppers & hung curd</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Tandoori Bharwan Khumb</strong><span class="text-on-surface-variant text-xs block">Mushrooms stuffed with cheese, nuts & aromatic spices</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Subz Galouti Kebab</strong><span class="text-on-surface-variant text-xs block">Melt-in-mouth spiced vegetable patties served on mini parathas</span></div></li>
-                </ul>
-                <div class="mt-4 pt-2 border-t border-outline-variant/30 text-[11px] text-secondary font-semibold uppercase tracking-[0.12em]">Charcoal Tandoor & Live Chaat Cart</div>
-              </div>
-
-              <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30">
-                <div class="flex items-center gap-2 mb-3">
-                  <span class="w-7 h-7 rounded-md bg-secondary text-on-secondary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">ramen_dining</span></span>
-                  <h3 class="font-semibold text-primary">Awadhi Dum Mains</h3>
-                </div>
-                <ul class="space-y-2.5 text-sm text-on-surface/90">
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Dal Makhani</strong><span class="text-on-surface-variant text-xs block">Slow cooked over embers, topped with churned white butter</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Paneer Butter Masala & Navratan Korma</strong><span class="text-on-surface-variant text-xs block">Velvety cashew-tomato gravies infused with kasuri methi</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Dum Subz Handi Biryani</strong><span class="text-on-surface-variant text-xs block">Long grain basmati sealed in clay pot with saffron & kewra</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Mirchi Ka Salan & Burani Raita</strong><span class="text-on-surface-variant text-xs block">Garlic-infused tempered curd & peanut-sesame gravy</span></div></li>
-                </ul>
-                <div class="mt-4 pt-2 border-t border-outline-variant/30 text-[11px] text-secondary font-semibold uppercase tracking-[0.12em]">Clay Handi Dum Presentation</div>
-              </div>
-
-              <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30">
-                <div class="flex items-center gap-2 mb-3">
-                  <span class="w-7 h-7 rounded-md bg-tertiary-container text-on-tertiary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">icecream</span></span>
-                  <h3 class="font-semibold text-primary">Shahi Mithai & Thandai</h3>
-                </div>
-                <ul class="space-y-2.5 text-sm text-on-surface/90">
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Royal Kesar Angoori Rasmalai</strong><span class="text-on-surface-variant text-xs block">Served in individual earthen matkas with saffron threads</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Shahi Tukda with Pure Gold Vark</strong><span class="text-on-surface-variant text-xs block">Crispy brioche soaked in rabdi, roasted almonds & pistachios</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Live Sizzling Jalebi with Rabdi</strong><span class="text-on-surface-variant text-xs block">Piped fresh in desi ghee, dunked in cardamom sugar syrup</span></div></li>
-                  <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span><div><strong>Kesaria Badam Thandai & Paan</strong><span class="text-on-surface-variant text-xs block">Rose petal infused welcome drink and Banarasi Meetha Paan</span></div></li>
-                </ul>
-                <div class="mt-4 pt-2 border-t border-outline-variant/30 text-[11px] text-secondary font-semibold uppercase tracking-[0.12em]">Artisanal Halwai Live Station</div>
-              </div>
+</div>
+<!-- Shahi Mithai & Beverages -->
+<div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="w-7 h-7 rounded-md bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">icecream</span>
+</span>
+<h3 class="font-title-md font-bold text-primary">Shahi Mithai &amp; Thandai</h3>
+</div>
+<ul class="space-y-2.5 font-body-sm text-sm text-on-surface/90">
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Royal Kesar Angoori Rasmalai</strong> <span class="text-on-surface-variant text-xs block">Served in individual earthen matkas with saffron threads</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Shahi Tukda with Pure Gold Vark</strong> <span class="text-on-surface-variant text-xs block">Crispy brioche soaked in rabdi, roasted almonds &amp; pistachios</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Live Sizzling Jalebi with Rabdi</strong> <span class="text-on-surface-variant text-xs block">Piped fresh in desi ghee, dunked in cardamom sugar syrup</span></div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<div><strong>Kesaria Badam Thandai &amp; Paan</strong> <span class="text-on-surface-variant text-xs block">Rose petal infused welcome drink and Banarasi Meetha Paan</span></div>
+</li>
+</ul>
+</div>
+<div class="mt-4 pt-2 border-t border-outline-variant/30 text-xs text-secondary font-semibold uppercase tracking-wider">
+              Artisanal Halwai Live Station
             </div>
-          </div>
-        </div>
-
-        <div class="px-6 sm:px-10 py-4 bg-surface-container border-t border-surface-container-highest flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div class="flex items-center gap-2 text-on-surface-variant text-xs">
-            <span class="material-symbols-outlined text-secondary text-[18px]">info</span>
-            <span>Custom multi-cuisine fusion menus and live cocktail carts available on request.</span>
-          </div>
-          <div class="flex items-center gap-3 w-full sm:w-auto">
-            <button type="button" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-4 py-2 bg-surface-container-highest hover:bg-surface-dim text-primary rounded-lg font-semibold text-sm"> <span class="material-symbols-outlined text-[18px]">download</span> Download PDF Menu </button>
-            <button type="button" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary-container hover:bg-primary text-on-primary rounded-lg font-semibold text-sm shadow-md"> <span class="material-symbols-outlined text-[18px]">calendar_month</span> Book a Private Food Tasting </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      function toggleMobileMenu() {
-        const drawer = document.getElementById('mobile-nav-drawer');
-        const icon = document.getElementById('mobile-menu-icon');
-        if (!drawer || !icon) return;
-
-        const isHidden = drawer.classList.contains('hidden');
-        drawer.classList.toggle('hidden', !isHidden);
-        icon.textContent = isHidden ? 'close' : 'menu';
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Footer Call-to-Actions -->
+<div class="px-6 sm:px-10 py-4 bg-surface-container border-t border-surface-container-highest flex flex-col sm:flex-row items-center justify-between gap-3">
+<div class="flex items-center gap-2 text-on-surface-variant text-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">info</span>
+<span class="">Custom multi-cuisine fusion menus and live cocktail carts available on request.</span>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-surface-container-highest hover:bg-surface-dim text-primary rounded-lg text-title-md font-semibold text-sm transition-colors cursor-pointer" onclick="alert('B&amp;R Events royal catering brochure download initiated. Complete menu PDF with pricing per plate is being retrieved.');" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="">Download PDF Menu</span>
+</button>
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary-container hover:bg-primary text-on-primary rounded-lg text-title-md font-semibold text-sm shadow-md shadow-primary/20 transition-all cursor-pointer" onclick="bookFoodTasting()" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span class="">Book a Private Food Tasting</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Dynamic Modal & Interactive Functionality -->
+<script>
+  function toggleMobileMenu() {
+    const drawer = document.getElementById('mobile-nav-drawer');
+    const icon = document.getElementById('mobile-menu-icon');
+    if (drawer && icon) {
+      const isHidden = drawer.classList.contains('hidden');
+      if (isHidden) {
+        drawer.classList.remove('hidden');
+        icon.textContent = 'close';
+      } else {
+        drawer.classList.add('hidden');
+        icon.textContent = 'menu';
       }
+    }
+  }
 
-      function openCateringModal() {
-        const modal = document.getElementById('catering-menu-modal');
-        const card = document.getElementById('catering-modal-card');
-        if (!modal || !card) return;
+  function openCateringModal() {
+    const modal = document.getElementById('catering-menu-modal');
+    const card = document.getElementById('catering-modal-card');
+    if (modal && card) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.classList.add('overflow-hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        modal.classList.add('opacity-100');
+        card.classList.remove('scale-95');
+        card.classList.add('scale-100');
+      }, 10);
+    }
+  }
 
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
-        card.classList.remove('hidden');
-        document.body.classList.add('overflow-hidden');
-      }
-
-      function closeCateringModal() {
-        const modal = document.getElementById('catering-menu-modal');
-        const card = document.getElementById('catering-modal-card');
-        if (!modal || !card) return;
-
-        modal.classList.add('hidden');
+  function closeCateringModal() {
+    const modal = document.getElementById('catering-menu-modal');
+    const card = document.getElementById('catering-modal-card');
+    if (modal && card) {
+      modal.classList.remove('opacity-100');
+      modal.classList.add('opacity-0');
+      card.classList.remove('scale-100');
+      card.classList.add('scale-95');
+      setTimeout(() => {
         modal.classList.remove('flex');
-        card.classList.add('hidden');
+        modal.classList.add('hidden');
         document.body.classList.remove('overflow-hidden');
-      }
+      }, 250);
+    }
+  }
 
-      function switchCuisineTab(type) {
-        const southPanel = document.getElementById('cuisine-south-panel');
-        const northPanel = document.getElementById('cuisine-north-panel');
-        const southBtn = document.getElementById('tab-btn-south');
-        const northBtn = document.getElementById('tab-btn-north');
+  function switchCuisineTab(type) {
+    const southPanel = document.getElementById('cuisine-south-panel');
+    const northPanel = document.getElementById('cuisine-north-panel');
+    const btnSouth = document.getElementById('tab-btn-south');
+    const btnNorth = document.getElementById('tab-btn-north');
 
-        if (!southPanel || !northPanel || !southBtn || !northBtn) return;
+    if (type === 'south') {
+      southPanel.classList.remove('hidden');
+      northPanel.classList.add('hidden');
+      btnSouth.classList.add('border-primary', 'text-primary');
+      btnSouth.classList.remove('border-transparent', 'text-on-surface-variant');
+      btnNorth.classList.add('border-transparent', 'text-on-surface-variant');
+      btnNorth.classList.remove('border-primary', 'text-primary');
+    } else {
+      northPanel.classList.remove('hidden');
+      southPanel.classList.add('hidden');
+      btnNorth.classList.add('border-primary', 'text-primary');
+      btnNorth.classList.remove('border-transparent', 'text-on-surface-variant');
+      btnSouth.classList.add('border-transparent', 'text-on-surface-variant');
+      btnSouth.classList.remove('border-primary', 'text-primary');
+    }
+  }
 
-        const isSouth = type === 'south';
-        southPanel.classList.toggle('hidden', !isSouth);
-        northPanel.classList.toggle('hidden', isSouth);
+  function bookFoodTasting() {
+    closeCateringModal();
+    const eventTypeSelect = document.getElementById('eventType');
+    if (eventTypeSelect) {
+      eventTypeSelect.value = 'Food & Catering';
+    }
+    const bookingSection = document.getElementById('booking-form');
+    if (bookingSection) {
+      setTimeout(() => {
+        bookingSection.scrollIntoView({ behavior: 'smooth' });
+      }, 200);
+    }
+  }
 
-        southBtn.classList.toggle('border-primary', isSouth);
-        southBtn.classList.toggle('text-primary', isSouth);
-        southBtn.classList.toggle('text-on-surface-variant', !isSouth);
+  // Gallery Filter Interactions
+  // Gallery Filter Interactions & Page Initialization
+  document.addEventListener('DOMContentLoaded', () => {
+    // Restrict booking date to today and future dates
+    const dateInput = document.getElementById('eventDate');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.min = today;
+    }
 
-        northBtn.classList.toggle('border-primary', !isSouth);
-        northBtn.classList.toggle('text-primary', !isSouth);
-        northBtn.classList.toggle('text-on-surface-variant', isSouth);
-      }
+    const filterButtons = document.querySelectorAll('#gallery-filters .gallery-pill');
+    const galleryItems = document.querySelectorAll('#gallery-container .gallery-item');
 
-      document.querySelectorAll('.gallery-pill').forEach((button) => {
-        button.addEventListener('click', () => {
-          const filter = button.dataset.filter;
-          const items = document.querySelectorAll('.gallery-item');
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filterValue = button.getAttribute('data-filter');
 
-          document.querySelectorAll('.gallery-pill').forEach((btn) => btn.classList.remove('active'));
-          button.classList.add('active');
-
-          items.forEach((item) => {
-            const matches = filter === 'all' || item.classList.contains(filter);
-            item.classList.toggle('hidden', !matches);
-          });
+        // Toggle Active Button Styles
+        filterButtons.forEach(btn => {
+          btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          btn.classList.add('bg-surface-container-highest', 'text-on-surface-variant');
         });
-      });
 
-      document.getElementById('inquiryForm')?.addEventListener('submit', function (event) {
-        event.preventDefault();
+        button.classList.remove('bg-surface-container-highest', 'text-on-surface-variant');
+        button.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
 
-        const form = event.currentTarget;
-        const formSuccess = document.getElementById('formSuccessMessage');
-        const formError = document.getElementById('formErrorMessage');
-
-        const requiredFields = [
-          'fullName',
-          'phoneNumber',
-          'emailAddress',
-          'eventType',
-          'eventDate'
-        ];
-
-        let hasError = false;
-
-        requiredFields.forEach((fieldId) => {
-          const field = form.querySelector(`#${fieldId}`);
-          if (!field || !field.value.trim()) {
-            hasError = true;
+        // Filter Gallery Items
+        // Filter Gallery Items and adjust grid span
+        galleryItems.forEach(item => {
+          if (filterValue === 'all' || item.classList.contains(filterValue)) {
+            item.style.display = 'block';
+            item.style.display = '';
+            if (filterValue !== 'all') {
+              item.classList.add('col-span-full', 'md:col-span-2', 'lg:col-span-12');
+            } else {
+              item.classList.remove('col-span-full', 'md:col-span-2', 'lg:col-span-12');
+            }
+          } else {
+            item.style.display = 'none';
+            item.classList.remove('col-span-full', 'md:col-span-2', 'lg:col-span-12');
           }
         });
-
-        if (hasError) {
-          formError.textContent = 'Please fill in all required fields before submitting.';
-          formError.classList.remove('hidden');
-          formSuccess.classList.add('hidden');
-          return;
-        }
-
-        formError.classList.add('hidden');
-        formSuccess.classList.remove('hidden');
-        form.reset();
       });
+    });
 
-      document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
+    // Close modal on backdrop click
+    const modal = document.getElementById('catering-menu-modal');
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
           closeCateringModal();
         }
       });
-    </script>
-  </body>
-</html>
+    }
+
+    // Close modal on Escape key press
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeCateringModal();
+      }
+    });
+
+    // Booking Form Submit Handler
+    const bookingForm = document.getElementById('inquiryForm');
+    const successMsg = document.getElementById('formSuccessMessage');
+    const errorMsg = document.getElementById('formErrorMessage');
+    const exportBtn = document.getElementById('exportInquiriesBtn');
+    const defaultSuccessMessage = successMsg?.textContent.trim();
+
+    if (exportBtn) {
+      exportBtn.addEventListener('click', async () => {
+        try {
+          const response = await fetch('/api/inquiries/export');
+          if (!response.ok) throw new Error('Unable to export inquiries.');
+
+          const blob = await response.blob();
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = 'inquiries_export.csv';
+          document.body.appendChild(link);
+          link.click();
+          link.remove();
+          URL.revokeObjectURL(url);
+        } catch (downloadError) {
+          if (errorMsg) {
+            errorMsg.textContent = downloadError.message || 'Unable to export inquiries.';
+            errorMsg.classList.remove('hidden');
+            errorMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }
+      });
+    }
+
+    if (bookingForm) {
+      bookingForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        successMsg?.classList.add('hidden');
+        errorMsg?.classList.add('hidden');
+
+        const submitButton = bookingForm.querySelector('button[type="submit"]');
+        const buttonLabel = submitButton?.querySelector('span:last-child');
+        const originalLabel = buttonLabel?.textContent;
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.setAttribute('aria-busy', 'true');
+        }
+        if (buttonLabel) buttonLabel.textContent = 'Sending inquiry...';
+
+        const inquiry = {
+          full_name: document.getElementById('fullName').value,
+          phone_number: document.getElementById('phoneNumber').value,
+          email_address: document.getElementById('emailAddress').value,
+          event_type: document.getElementById('eventType').value,
+          event_date: document.getElementById('eventDate').value,
+          guest_count: document.getElementById('guestCount').value,
+          venue_location: document.getElementById('venueLocation').value,
+          requirements: document.getElementById('requirements').value
+        };
+
+        try {
+          const response = await fetch('/api/inquiries', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(inquiry)
+          });
+          const result = await response.json();
+          if (!response.ok) throw new Error(result.error || 'We could not send your inquiry. Please try again.');
+
+          if (successMsg) {
+            successMsg.textContent = result.email_warning || defaultSuccessMessage;
+            successMsg.classList.remove('hidden');
+            bookingForm.reset();
+            successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        } catch (error) {
+          if (errorMsg) {
+            errorMsg.textContent = error.message || 'We could not send your inquiry. Please try again.';
+            errorMsg.classList.remove('hidden');
+            errorMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        } finally {
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.removeAttribute('aria-busy');
+          }
+          if (buttonLabel) buttonLabel.textContent = originalLabel;
+        }
+      });
+    }
+  });
+</script>
+
+
+</body></html>
